@@ -1,0 +1,108 @@
+html{
+    --yellow : rgb(251,212,43);
+}
+
+body{
+    /* margin: 0; */
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: beige; */
+}
+
+main > h2{
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(251,212,43);
+    text-align: center;
+}
+
+section {
+    display: flex;
+    border: 1px solid;
+    margin-bottom: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_input_btn{
+    
+}
+
+.button_lnk{
+    height: 40px;
+    min-width: 100px;
+}
+
+button#search_input_btn {
+    width: 45px;
+    height: 45px;
+    background-image: url('img/search.svg');
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    border: 0;
+    background-size: 50%;
+    background-position: center center;
+    cursor: pointer;
+}
+
+#search > h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#search_input_wrapper{}
+
+#search_input {
+  --width: 200px;
+  --height: 45px;
+  display: inline-flex;
+  position: relative;
+  /* background-color: white; */
+  align-items: center;
+  gap: 10px;
+}
+
+
+.box{
+  border: 1px solid rgba(0,0,0,1);
+  border-right: 0;
+  height: var(--height);
+  width: var(--width);
+  position: relative;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  z-index: 0;
+  box-sizing: border-box;
+  filter: drop-shadow(3px 2px 4px rgba(0,0,0,1));
+}
+
+.box:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(24px at 106% 50%, transparent 98%, rgba(0,0,0,.8) 99%, transparent 113%);
+}
+
+#searchbox{
+      border: 0;
+      filter: none;
+      position: absolute;
+      z-index: 10;
+      padding: 0 2em 0 1em;
+      outline: 0;
+      box-sizing: border-box;
+      /* background: transparent; */
+      margin-left: -1px;
+      width: calc(var(--width) + 15px);
+      height: calc(var(--height) + 2px);
+      border-top-left-radius: 200px;
+      border-bottom-left-radius: 200px;
+      --mask: radial-gradient(24px at 100% 50%,rgb(0 0 0 / 0%) 99%, rgba(0,0,0,1) 92%);
+      -webkit-mask: var(--mask);
+      mask: var(--mask);
+      font-size: 17px;
+}
