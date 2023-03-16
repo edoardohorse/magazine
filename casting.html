@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="casting.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     </head>
     <body>
         <header></header>
@@ -16,16 +18,39 @@
                             <!-- <input type="text"> -->
                             <input type="text" id="searchbox">
                             <div class="box"></div>
-                            <button id="search_input_btn"></button>
+                            <button id="search_input_btn" class="btn_icon"></button>
                         </div>
                     </form>
                 </div>
-                <a href="" class="button_lnk">Ricerca Avanzata</a>
+                <a href="" class="btn_lnk">Ricerca Avanzata</a>
             </section>
-            <section id="icons"></section>
-            <section id="slideshow_wrapper"></section>
-            <section id="opportunita"></section>
-            <section id="casting"></section>
+            <section id="icons">
+                <div class="icons_btn" ><a data-icon="plus" href="" class="btn_icon"></a><p>Crea casting</p></div>
+                <div class="icons_btn" ><a data-icon="users" href="" class="btn_icon"></a><p>Utenti</p></div>
+                <div class="icons_btn" ><a data-icon="casting" href="" class="btn_icon"></a><p>Casting</p></div>
+                <div class="icons_btn" ><a data-icon="magazine" href="" class="btn_icon"></a><p>Magazine</p></div>
+            </section>
+            <section id="slideshow_wrapper">
+                <h2>Il MAGAZINE</h2>
+                <p>Scopri il <b>magazine</b> e scopri tutte le <b>news</b>, le <b>interviste</b> e gli <b>eventi</b> del momento</p>
+
+                <a href="" class="btn_lnk">Sfoglia il magazine</a>
+            </section>
+            <section id="opportunita">
+                <h2>Le opportunità che ti offriamo</h2>
+                <p>Registrati e scopri tutte le funzionalità pensate per te</p>
+
+                <a href="" class="btn_lnk btn_lnk--uppercase">Accedi</a>
+                <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase">Registrati</a>
+                <a href="" class="lnk">entra come ospite</a>
+            </section>
+            <section id="casting">
+                <div id="casting_info">
+                    <h2>IL CASTING</h2>
+                     <a href="" class="btn_lnk btn_lnk--uppercase">Sfoglia caslist</a>
+                     <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase">Crea Casting</a>
+                </div>
+            </section>
             <footer></footer>
         </main>
     </body>
