@@ -94,7 +94,6 @@ section {
     gap: 10px;
 }
 
-
 .box {
     border: 1px solid rgba(0, 0, 0, 1);
     border-right: 0;
@@ -198,7 +197,7 @@ section#icons:after {
 }
 
 section#slideshow_wrapper {
-    height: 400px;
+    /* height: 400px; */
     gap: 0;
 }
 
@@ -210,6 +209,7 @@ h2 {
 section#slideshow_wrapper > p {
     font-size: 20px;
     margin: 0;
+    text-align: center;
 }
 
 section#opportunita {
@@ -234,4 +234,32 @@ section#casting {
 }
 .btn_icon[data-icon='magazine']{
     background-image: url('img/magazine.svg');
+}
+
+#slideshow_magazine {
+    width: 1440px;
+    /* height: 250px; */
+    overflow: hidden;
+}
+
+
+#slideshow_magazine img{
+    /* height: 250px; */
+    width: calc(1440px / 3);
+    /* object-fit: contain; */
+    position: relative;
+}
+
+.slideshow_label {
+    text-transform: uppercase;
+    font-size: 20px;
+    top: -40px;
+    position: relative;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    height: 40px;
+    /* font-size: 100%; */
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
 }
