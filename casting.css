@@ -31,7 +31,8 @@ section {
     background-color: rgb(250, 247, 248);
 }
 
-.search_input_btn {}
+.search_input_btn {
+}
 
 .btn_lnk {
     display: inline-flex;
@@ -82,7 +83,8 @@ section {
     margin: 0.5em;
 }
 
-#search_input_wrapper {}
+#search_input_wrapper {
+}
 
 #search_input {
     --width: 200px;
@@ -212,27 +214,31 @@ section#slideshow_wrapper > p {
     text-align: center;
 }
 
-section#opportunita {
-    height: 828px;
+section#opportunita_wrapper {
+    /* height: 828px; */
 }
 
 section#casting {
     height: 575px;
 }
 
-.btn_icon[data-icon]{
+.btn_icon[data-icon] {
     background-position: center center;
 }
-.btn_icon[data-icon='plus']{
+
+.btn_icon[data-icon='plus'] {
     background-image: url('img/plus.svg');
 }
-.btn_icon[data-icon='users']{
+
+.btn_icon[data-icon='users'] {
     background-image: url('img/users.svg');
 }
-.btn_icon[data-icon='casting']{
+
+.btn_icon[data-icon='casting'] {
     background-image: url('img/casting.svg');
 }
-.btn_icon[data-icon='magazine']{
+
+.btn_icon[data-icon='magazine'] {
     background-image: url('img/magazine.svg');
 }
 
@@ -242,8 +248,7 @@ section#casting {
     overflow: hidden;
 }
 
-
-#slideshow_magazine img{
+#slideshow_magazine img {
     /* height: 250px; */
     width: calc(1440px / 3);
     /* object-fit: contain; */
@@ -262,4 +267,81 @@ section#casting {
     padding: 5px;
     box-sizing: border-box;
     display: none;
+}
+
+#opportunita_wrapper > p {
+    font-size: 25px;
+    margin: 0;
+}
+
+#opportunita_wrapper > h2 {
+    font-size: 35px;
+}
+
+.opportunita {
+    display: flex;
+    gap: 3em;
+    height: 550px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    box-sizing: content-box;
+}
+
+.opportunita section {
+    height: 100%;
+    background: white;
+    width: 300px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 38px -23px black;
+}
+
+.opportunita section header {
+    display: flex;
+    flex-direction: column;
+    background: var(--yellow);
+    height: 90px;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 32px 32px 0 0;
+    justify-content: center;
+}
+
+.opportunita section b {
+    margin-left: 0.5ch;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.opportunita section main {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 65px;
+    height: 60%;
+    /* border-color: black; */
+    /* border-style: solid; */
+    /* border-width: 1px 0 1px 0; */
+    justify-content: center;
+}
+
+.opportunita section main:before,
+.opportunita section main:after{
+    content: "";
+    height: 1px;
+    /* border-top: 1px solid grey; */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #00000021;
+}
+
+
+.opportunita section main:after {
+    bottom: 0;
+    position: absolute;
 }
