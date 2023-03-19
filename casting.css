@@ -86,7 +86,6 @@ section {
     padding: 0.2em 1em;
 }
 
-
 .lnk {
     font-size: 21px;
     color: black;
@@ -103,6 +102,9 @@ section {
 }
 
 .search_input_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search_input {
@@ -440,7 +442,6 @@ h2 {
     transition: transform 100ms;
 }
 
-
 .casting_image_secondary img {
     height: calc(var(--height) / 2 - 12px);
     width: 300px;
@@ -466,8 +467,6 @@ h2 {
 .casting_image .hoverable:hover {
     box-shadow: 0px 0px 15px -6px black;
 }
-
-
 
 footer {
     background: white;
@@ -495,8 +494,6 @@ footer {
     display: flex;
     flex-direction: column;
 }
-
-
 
 @media only screen and (max-width: 945px) {
     #casting {
@@ -573,4 +570,8 @@ header {
 
 .title > span {
     font-size: calc(var(--font-size) - 10px);
+}
+
+.search_input_wrapper > .btn_lnk {
+    max-width: 150px;
 }
