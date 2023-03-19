@@ -545,6 +545,11 @@ footer {
         flex-direction: column;
         height: auto;
         align-items: center;
+        gap: 25px;
+    }
+
+     .opportunita section{
+        width: 350px;
     }
 
     .opportunita section main {
