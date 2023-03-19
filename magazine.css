@@ -8,7 +8,7 @@ body {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
-    /* background-color: var(--light-grey); */
+    background-color: white;
     /* padding-top: 149px; */
     overflow-x: hidden;
 }
@@ -245,7 +245,8 @@ section {
 }
 
 #opportunita_wrapper {
-    height: 828px;
+    /* height: auto; */
+    min-height: 828px;
     background: radial-gradient(ellipse at 50% 50%, white 70%, rgb(250 246 248) 70%);
     background-size: 240% 100%;
     background-position: center;
@@ -361,8 +362,9 @@ section {
 
 .opportunita {
     display: flex;
+    flex-wrap: wrap;
     gap: 3vw;
-    height: 550px;
+    min-height: 550px;
     margin-bottom: 50px;
     width: 100%;
     justify-content: center;
@@ -371,7 +373,7 @@ section {
 }
 
 .opportunita section {
-    height: 100%;
+    height: 550px;
     background: white;
     width: 300px;
     border-radius: 32px;
