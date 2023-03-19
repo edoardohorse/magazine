@@ -36,11 +36,13 @@ section {
 }
 
 .hoverable, .btn_lnk, .btn_icon {
-    transition: box-shadow 150ms;
+    transition: box-shadow 150ms, transform 150ms;
 }
 
 .hoverable:hover, .btn_lnk:hover, .btn_icon:hover {
     box-shadow: 0px 0px 12px -6px black;
+    transform: scale(1.01, 1.01);
+    line-height: 0px;
 }
 
 .btn_lnk {
@@ -154,6 +156,11 @@ section {
     -webkit-mask: var(--mask);
     mask: var(--mask);
     font-size: 20px;
+}
+
+.searchbox:hover ~ .box {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+    box-shadow: -4px 0px 10px -13px black;
 }
 
 .searchbox:focus ~ .box {
@@ -402,6 +409,13 @@ h2 {
     margin-top: 25px;
 }
 
+.casting_info_btns {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .casting_image {
     --height: 350px;
     display: flex;
@@ -422,7 +436,9 @@ h2 {
 .casting_image img {
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 100ms;
 }
+
 
 .casting_image_secondary img {
     height: calc(var(--height) / 2 - 12px);
@@ -449,6 +465,7 @@ h2 {
 .casting_image .hoverable:hover {
     box-shadow: 0px 0px 15px -6px black;
 }
+
 
 
 footer {
@@ -548,4 +565,3 @@ footer {
         margin-top: 10px;
     }
 }
-
