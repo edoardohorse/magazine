@@ -9,17 +9,18 @@ body {
     margin-right: auto;
     margin-left: auto;
     /* background-color: var(--light-grey); */
-    padding-top: 149px;
+    /* padding-top: 149px; */
     overflow-x: hidden;
 }
 
 main > h2 {
-    font-size: 48px;
+    --font-size: 55px;
+    font-size: var(--font-size);
     font-weight: 500;
     text-transform: uppercase;
     color: rgb(251, 212, 43);
     text-align: center;
-    margin-bottom: 48px;
+    margin: 20px 0 48px;
 }
 
 section {
@@ -564,4 +565,12 @@ footer {
     .casting_info_btns {
         margin-top: 10px;
     }
+}
+
+header {
+    padding: 1em;
+}
+
+.title > span {
+    font-size: calc(var(--font-size) - 10px);
 }
