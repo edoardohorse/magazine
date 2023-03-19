@@ -5,10 +5,10 @@ html {
 
 body {
     margin: 0;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin-right: auto;
     margin-left: auto;
-    background-color: white;
+    background-color: var(--light-grey);
     /* padding-top: 149px; */
     overflow-x: hidden;
 }
