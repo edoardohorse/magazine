@@ -562,9 +562,10 @@ footer {
     .casting_info_btns {
         margin-top: 10px;
     }
+   
 }
 
-header {
+body > header {
     padding: 1em;
 }
 
