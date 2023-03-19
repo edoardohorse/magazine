@@ -1,8 +1,8 @@
 <html>
     <head>
-        <link rel="stylesheet" href="casting.css">
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="casting.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
     </head>
@@ -36,56 +36,20 @@
                 <h2>Il MAGAZINE</h2>
                 <p>Scopri il <b>magazine</b> e scopri tutte le <b>news</b>,<br> le <b>interviste</b> e gli <b>eventi</b> del momento</p>
                 <div id="slideshow_magazine">
-                    <!-- <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <!-- <button class="btn_prev"><</button> -->
+                    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img src="./img/slideshow/1.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="./img/slideshow/2.jpg" alt=""></li>
-                                <li class="splide__slide"><img src="./img/slideshow/3.jpg" alt=""></li>
+                                <li class="splide__slide"><div class="slideshow_slide"><img src="./img/slideshow/1.jpg" alt=""><div class="slideshow_label">avatar</div></div></li>
+                                <li class="splide__slide"><div class="slideshow_slide"><img src="./img/slideshow/2.jpg" alt=""><div class="slideshow_label">the whale</div></div></li>
+                                <li class="splide__slide"><div class="slideshow_slide"><img src="./img/slideshow/3.jpg" alt=""><div class="slideshow_label">pulp fiction</div></div></li>
+                                <li class="splide__slide"><div class="slideshow_slide"><img src="./img/slideshow/4.jpg" alt=""><div class="slideshow_label">eightful eight</div></div></li>
+                                <li class="splide__slide"><div class="slideshow_slide"><img src="./img/slideshow/5.jpg" alt=""><div class="slideshow_label">kill bill</div></div></li>
+                                <li class="splide__slide"><div class="slideshow_slide"><img src="./img/slideshow/6.jpg" alt=""><div class="slideshow_label">unce upon a time in hollywood</div></div></li>
                             </ul>
                         </div>
-                    </div> -->
-                    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img src="./img/slideshow/1.jpg" alt="">
-                                    <div class="slideshow_label">
-                                        avatar
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./img/slideshow/2.jpg" alt="">
-                                    <div class="slideshow_label">
-                                        the whale
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./img/slideshow/3.jpg" alt="">
-                                    <div class="slideshow_label">
-                                        pulp fiction
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./img/slideshow/4.jpg" alt="">
-                                    <div class="slideshow_label">
-                                        eightful eight
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./img/slideshow/5.jpg" alt="">
-                                    <div class="slideshow_label">
-                                        kill bill
-                                    </div>
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./img/slideshow/6.jpg" alt="">
-                                    <div class="slideshow_label">
-                                        unce upon a time in hollywood
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <!-- <button class="btn_next">></button> -->
                 </div>
                 </div>
                 <div class="search_input_wrapper" style="display: none;">
@@ -188,17 +152,32 @@
         </main>
     </body>
     <script>
-    /* document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '#image-carousel', {
+        // new Splide( '.splide' ).mount();
+    /* const prev = document.createElement('button')
+    prev.classList.add('btn_prev') */
+    document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '.splide', {
             perPage : 3,
-            height: 250,
+            height: 270,
+            gap: 5,
+            // padding: { left: 40, right: 40 },
+            breakpoints: {
+             1100: {
+             perPage: 2,
+             },
+             770: {
+             perPage: 1,
+             },
+            }
+            // width:1380,
+            // arrows: {"prev":document.querySelector(".btn_prev"), next: document.querySelector(".btn_next")},
             // fixedWidth:300,
             // fixedHeight:130,
             // fixedWidth:480, 
-            // width:1440,
-            pagination: true,
-            autoWidth: true
-        }).mount();
-    }); */
+            // pagination: true,
+            // autoWidth: true
+        }        
+        ).mount();
+    });
     </script>
 </html>

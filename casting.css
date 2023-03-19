@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+body>header {
+    padding: 1em;
+}
+
 main > h2 {
     --font-size: 55px;
     font-size: var(--font-size);
@@ -215,7 +219,7 @@ section#icons {
     transition: box-shadow 150ms;
 }
 
-section#slideshow_wrapper {
+#slideshow_wrapper {
     /* height: 400px; */
     gap: 0;
     padding: 40px 0;
@@ -265,34 +269,87 @@ h2 {
     background-image: url('img/magazine.svg');
 }
 
+/* SLIDESHOW OPPORTUNITA  */
+
 #slideshow_magazine {
-    width: 1440px;
-    /* height: 250px; */
+    --height: 350px;
+    display: flex;
+    height: var(--height);
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-top: 15px;
     width: 100%;
 }
 
 #slideshow_magazine img {
-    /* height: 250px; */
-    width: calc(1440px / 3);
-    /* object-fit: contain; */
+    height: calc(100% - 10px);
+    width: 100%;
+    object-fit: cover;
     position: relative;
 }
 
 .slideshow_label {
+    width: 100%;
     text-transform: uppercase;
     font-size: 20px;
-    top: -40px;
+    top: 0px;
+    left: 0;
     position: relative;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgb(0 0 0);
     color: white;
-    height: 40px;
+    height: 50px;
+    line-height: 20px;
     /* font-size: 100%; */
-    padding: 5px;
+    padding: 6px 6px 0;
     box-sizing: border-box;
-    display: none;
+    border-top: 1px solid #878787;
 }
+
+.btn_prev,
+.btn_next {
+    height: 100%;
+    width: 30px;
+}
+
+.splide__arrow {
+    height: calc(var(--height) - 130px);
+    border-radius: unset;
+    opacity: 1;
+    background: #aeb7bbb0;
+    color: white;
+}
+
+.splide__arrow:disabled {
+    opacity: .5;
+}
+
+.splide__arrow--prev {
+    left: 5px;
+}
+
+.splide__arrow--next {
+    right: 5px;
+}
+
+.splide__pagination {
+    bottom: 0px;
+}
+
+.splide__pagination__page {
+    background: grey;
+}
+
+.splide__pagination__page.is-active {
+    background: black;
+}
+
+
+.slideshow_slide {
+    position: relative;
+    width: 100%;
+}
+
+
+/* SECTION OPPORTUNITA  */
 
 #opportunita_wrapper > p {
     font-size: 25px;
@@ -521,6 +578,11 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     body {
         width: 100vw;
         margin: 0;
@@ -533,6 +595,9 @@ footer {
     section#icons {
         flex-wrap: wrap;
         height: 340px;
+
+    .splide__arrow {
+        display: none;
     }
 
     section#opportunita_wrapper {
@@ -548,7 +613,7 @@ footer {
         gap: 25px;
     }
 
-     .opportunita section{
+    .opportunita section {
         width: 350px;
     }
 
@@ -567,12 +632,8 @@ footer {
     .casting_info_btns {
         margin-top: 10px;
     }
-   
 }
 
-body > header {
-    padding: 1em;
-}
 
 .title > span {
     font-size: calc(var(--font-size) - 10px);
@@ -580,4 +641,11 @@ body > header {
 
 .search_input_wrapper > .btn_lnk {
     max-width: 150px;
+}
+
+
+    .casting_images img.primary{
+        width: 100%;
+    }
+
 }
