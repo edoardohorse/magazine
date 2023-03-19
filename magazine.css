@@ -164,7 +164,7 @@ section {
     outline: 0;
     box-sizing: border-box;
     margin-left: -1px;
-    width: calc(var(--width) + 20px);
+    width: calc(var(--width) + 25px);
     height: calc(var(--height) + 2px);
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
@@ -181,7 +181,7 @@ section {
 
 .searchbox:focus ~ .box {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
-    box-shadow: -4px 0px 20px -13px black;
+    box-shadow: 0px 0px 20px -13px black;
 }
 
 #search {
