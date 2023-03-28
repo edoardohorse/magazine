@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="magazine.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
     </head>
     <body>
         <header>
@@ -18,6 +19,8 @@
                 <div class="search_input_wrapper">
                     <form action="">
                         <div class="search_input">
+                            <!-- TODO action https://testi.rbcasting.com/search?q=pippo -->
+                            <!-- TODO https://rbcasting.com/rb/search?q=pippo -->
                             <input type="text" class="searchbox" name="search_professionista"
                                 placeholder="Nome artista">
                             <div class="box"></div>
@@ -175,13 +178,14 @@
             perPage : 3,
             height: 270,
             gap: 5,
-            // padding: { left: 40, right: 40 },
+            padding: { left: 40, right: 40 },
             breakpoints: {
              1100: {
              perPage: 2,
              },
              770: {
              perPage: 1,
+             padding: {left: 0, right: 0}
              },
             }
             // width:1380,

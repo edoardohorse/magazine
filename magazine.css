@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    /* max-width: 1440px; */
+    max-width: 1920px;
     margin-right: auto;
     margin-left: auto;
     background-color: var(--light-grey);
@@ -223,6 +223,7 @@ section {
     /* height: 400px; */
     gap: 0;
     padding: 40px 0;
+    /* width: 100vw; */
 }
 
 #slideshow_wrapper > p {
@@ -268,7 +269,7 @@ section {
     height: var(--height);
     overflow: hidden;
     margin-top: 15px;
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 35px;
 }
 
@@ -623,6 +624,14 @@ footer {
 
     .icons_btn p{
         font-size: 18;
+    }
+
+    #slideshow_magazine{
+        width: 100%;
+    }
+
+    .splide{
+        width: 100%;
     }
 
     .splide__arrow {
