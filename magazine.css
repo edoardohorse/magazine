@@ -701,6 +701,7 @@ footer {
 }
 
 .casting_image--tertiary {
+<<<<<<< HEAD
     width: 900px;
     flex-direction: row;
 }
@@ -711,4 +712,8 @@ footer {
 
 .casting_images .hoverable:nth-child(3n) {
     grid-area: tertiary;
+=======
+    /* width: 900px; */
+    /* flex-direction: row; */
+>>>>>>> 5a282aa5f97f2f2a9a10794a9f7c732662c45362
 }
