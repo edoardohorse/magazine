@@ -1,0 +1,35 @@
+{
+
+    
+    "search_title": "<b>Trova</b> i professionisti del settore",
+    "placeholder_artist": "Nome artista",
+    "btn_search_artist":"Cerca artista",
+    "btn_search_advance":"Ricerca Avanzata",
+    "btn_lnk_create_casting":"Crea casting",
+    "btn_lnk_users":"Utenti",
+    "btn_lnk_casting":"Casting",
+    "btn_lnk_magazine":"Magazine",
+
+
+    "magazine_title": "Il MAGAZINE",
+    "magazine_subtitle": "Scopri il <b>magazine</b> e scopri tutte le <b>news</b>,<br> le <b>interviste</b> e gli <b>eventi</b> del momento",
+    "placeholder_magazine":"Cerca nel magazine",
+    "btn_search_magazine": "Cerca nel magazine",
+
+
+    "opportunita_title":"Le opportunità che ti offriamo",
+    "opportunita_subtitle":"<b> Registrati </b> e scopri tutte le funzionalità pensate per te",
+    "section_opportunita_attore":"<span>Sei un</span><b>attore?</b>",
+    "section_opportunita_casting_director":"<span>Sei un</span><b>casting director?</b>",
+    "section_opportunita_agente":"<span>Sei un</span><b>agente?</b>",
+    "section_opportunita_audizione":"<span>Inserisci</span><b>audizione</b>",
+    "btn_login":"Accedi",
+    "btn_signin":"Registrati",
+    "btn_lnk_guest":"entra come ospite",
+
+    "casting_title":"IL CASTING",
+    "btn_lnk_castlist":"Sfoglia caslist"
+
+
+
+}

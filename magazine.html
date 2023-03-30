@@ -15,30 +15,31 @@
             <h2 class="title">RB C<span>asting</span></h2>
             <section id="search">
 
-                <h3><b>Trova</b> i professionisti del settore</h3>
+                <h3 texted="search_title"></h3>
                 <div class="search_input_wrapper">
                     <form action="">
                         <div class="search_input">
                             <!-- TODO action https://testi.rbcasting.com/search?q=pippo -->
                             <!-- TODO https://rbcasting.com/rb/search?q=pippo -->
                             <input type="text" class="searchbox" name="search_professionista"
-                                placeholder="Nome artista">
+                                texted="placeholder_artist" textedAttribute="placeholder">
                             <div class="box"></div>
-                            <button class="search_input_btn btn_icon"></button>
+                            <button class="search_input_btn btn_icon"
+                                texted="btn_search_artist" textedAttribute="title"></button>
                         </div>
                     </form>
-                    <a href="" class="btn_lnk">Ricerca Avanzata</a>
+                    <a href="" class="btn_lnk" texted="btn_search_advance"></a>
                 </div>
             </section>
             <section id="icons">
-                <div class="icons_btn"><a data-icon="plus" href="" class="btn_icon"></a><p>Crea casting</p></div>
-                <div class="icons_btn"><a data-icon="users" href="" class="btn_icon"></a><p>Utenti</p></div>
-                <div class="icons_btn"><a data-icon="casting" href="" class="btn_icon"></a><p>Casting</p></div>
-                <div class="icons_btn"><a data-icon="magazine" href="" class="btn_icon"></a><p>Magazine</p></div>
+                <div class="icons_btn"><a data-icon="plus" href="" class="btn_icon"></a><p texted="btn_lnk_create_casting"></p></div>
+                <div class="icons_btn"><a data-icon="users" href="" class="btn_icon"></a><p texted="btn_lnk_users"></p></div>
+                <div class="icons_btn"><a data-icon="casting" href="" class="btn_icon"></a><p texted="btn_lnk_casting"></p></div>
+                <div class="icons_btn"><a data-icon="magazine" href="" class="btn_icon"></a><p texted="btn_lnk_magazine"></p></div>
             </section>
             <section id="slideshow_wrapper">
-                <h2>Il MAGAZINE</h2>
-                <p>Scopri il <b>magazine</b> e scopri tutte le <b>news</b>,<br> le <b>interviste</b> e gli <b>eventi</b> del momento</p>
+                <h2 texted="magazine_title"></h2>
+                <p texted="magazine_subtitle"></p>
                 <div id="slideshow_magazine">
                     <!-- <button class="btn_prev"><</button> -->
                     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
@@ -59,22 +60,22 @@
                 <div class="search_input_wrapper">
                     <form action="">
                         <div class="search_input">
-                            <input type="text" class="searchbox" name="search_magazine" placeholder="Cerca nel magazine">
+                            <input type="text" class="searchbox" name="search_magazine"
+                                texted="placeholder_magazine" textedAttribute="placeholder">
                             <div class="box"></div>
-                            <button class="search_input_btn btn_icon"></button>
+                            <button class="search_input_btn btn_icon"
+                                texted="btn_search_magazine" textedAttribute="title"></button>
                         </div>
                     </form>
-                    <a href="" class="btn_lnk">Sfoglia il magazine</a>
+                    <a href="" class="btn_lnk" texted="btn_lnk_magazine"></a>
                 </div>
             </section>
             <section id="opportunita_wrapper">
-                <h2>Le opportunità che ti offriamo</h2>
-                <p><b>Registrati</b> e scopri tutte le funzionalità pensate per te</p>
+                <h2 texted="opportunita_title"></h2>
+                <p texted="opportunita_subtitle"></p>
                 <div class="opportunita">
                     <section >
-                        <header>
-                            <span>Sei un</span>
-                            <b>attore?</b>
+                        <header texted="section_opportunita_attore">
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -85,9 +86,7 @@
                         </main>
                     </section>
                     <section>
-                        <header>
-                            <span>Sei un</span>
-                            <b>casting director?</b>
+                        <header texted="section_opportunita_casting_director"></b>
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -99,9 +98,7 @@
                         
                     </section>
                     <section>
-                        <header>
-                            <span>Sei un</span>
-                            <b>agente?</b>
+                        <header texted="section_opportunita_agente">
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -113,9 +110,7 @@
 
                     </section>
                     <section>
-                        <header>
-                            <span>Inserisci</span>
-                            <b>AUDIZIONE</b>
+                        <header texted="section_opportunita_audizione">
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -127,16 +122,16 @@
 
                     </section>
                 </div>
-                <a href="" class="btn_lnk btn_lnk--uppercase">Accedi</a>
-                <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase">Registrati</a>
-                <a href="" class="lnk">entra come ospite</a>
+                <a href="" class="btn_lnk btn_lnk--uppercase" texted="btn_login"></a>
+                <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" texted="btn_signin"></a>
+                <a href="" class="lnk" texted="btn_lnk_guest"></a>
             </section>
             <section id="casting">
                 <div class="casting_info">
-                    <h2>IL CASTING</h2>
+                    <h2 texted="casting_title"></h2>
                     <div class="casting_info_btns">
-                        <a href="" class="btn_lnk btn_lnk--uppercase">Sfoglia caslist</a>
-                         <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase">Crea Casting</a>
+                        <a href="" class="btn_lnk btn_lnk--uppercase" texted="btn_lnk_castlist"></a>
+                         <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" texted="btn_lnk_create_casting"></a>
                     </div>
                 </div>
                 <div class="casting_images">
@@ -210,5 +205,25 @@
         }        
         ).mount();
     });
+    </script>
+    <script>
+        function injectLang(lang){
+            debugger
+            const inject = (el, lang)=>{
+                const key = el.getAttribute("texted")
+                const value = lang[key] || null
+                if(value){
+                    if(el.hasAttribute("textedAttribute")){
+                        el.setAttribute(el.getAttribute("textedAttribute"),value)
+                    }
+                    else el.innerHTML = value
+                }
+            }
+
+            const els = Array.from(document.querySelectorAll("[texted]"))
+            els.forEach(el=>inject(el,lang))
+        }
+
+        fetch("./lang.json").then(data=>data.json()).then(lang=>injectLang(lang))
     </script>
 </html>
