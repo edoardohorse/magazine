@@ -226,10 +226,14 @@ function initMagazine(){
 
         const closebtn = document.createElement("div")
         closebtn.id = ID_BTN
-        closebtn.onclick = toggleMagazine
+        closebtn.onclick = closeMagazine
         closebtn.textContent = 'X'
         document.body.appendChild(closebtn)
     }
+
+    document.querySelector("a[href='#home']").onclick = openMagazine
+
+    openMagazine()
 }
 
 const CLASS_MAGAZINE = "magazine--show"
@@ -241,8 +245,6 @@ function toggleMagazine(){
     else openMagazine()
 }
 function openMagazine(){
-    
-
     iframeMagazine.classList.add(CLASS_MAGAZINE)
     document.querySelector("#"+ID_BTN_MAGAZINE).classList.add(CLASS_BTN_MAGAZINE)
     document.body.style.overflow = 'hidden'
@@ -309,7 +311,6 @@ function checkCookie() {
        }
     }
 }
-
 
 
 </script>
