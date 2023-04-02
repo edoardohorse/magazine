@@ -586,7 +586,7 @@ section {
 }
 
 footer {
-    background: white;
+    background: #343a40 !important;
     display: flex;
     /* height: 100px; */
     box-shadow: 0px -2px 11px -6px black;
@@ -595,21 +595,28 @@ footer {
     position: relative;
     align-items: center;
     padding: 1em 1em 0;
+    color: white;
 }
 
 .footer_lnks {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    /* color: white; */
+}
+
+footer .lnk{
+    color: white;
 }
 
 .footer_content img {
-    width: 200px;
+    /* width: 200px; */
 }
 
 .footer_content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1305px) {
