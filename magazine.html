@@ -134,8 +134,8 @@
                          <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" texted="btn_lnk_create_casting"></a>
                     </div>
                 </div>
-                <div class="casting_images">
-                    <div class="casting_images--primary">
+                <div id="casting_images" class="casting_images">
+                    <!-- <div class="casting_images--primary">
                         <a href="" class="hoverable">
                             <img src="./img/casting_1.jpg" alt="./magazine/img/casting_1.jpg" class="primary">
                         </a>
@@ -153,7 +153,7 @@
                         </a>
                         <a href="" class="hoverable"><img src="./img/casting_3.jpg" alt="./magazine/img/casting_3.jpg">
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <footer>
@@ -174,54 +174,5 @@
             </footer>
         </main>
     </body>
-    <script>
-        // new Splide( '.splide' ).mount();
-    /* const prev = document.createElement('button')
-    prev.classList.add('btn_prev') */
-    document.addEventListener( 'DOMContentLoaded', function () {
-        new Splide( '.splide', {
-            perPage : 3,
-            height: 270,
-            gap: 5,
-            padding: { left: 40, right: 40 },
-            breakpoints: {
-             1100: {
-             perPage: 2,
-             },
-             770: {
-             perPage: 1,
-             padding: {left: 0, right: 0}
-             },
-            }
-            // width:1380,
-            // arrows: {"prev":document.querySelector(".btn_prev"), next: document.querySelector(".btn_next")},
-            // fixedWidth:300,
-            // fixedHeight:130,
-            // fixedWidth:480, 
-            // pagination: true,
-            // autoWidth: true
-        }        
-        ).mount();
-    });
-    </script>
-    <script>
-        function injectLang(lang){
-            debugger
-            const inject = (el, lang)=>{
-                const key = el.getAttribute("texted")
-                const value = lang[key] || null
-                if(value){
-                    if(el.hasAttribute("textedAttribute")){
-                        el.setAttribute(el.getAttribute("textedAttribute"),value)
-                    }
-                    else el.innerHTML = value
-                }
-            }
-
-            const els = Array.from(document.querySelectorAll("[texted]"))
-            els.forEach(el=>inject(el,lang))
-        }
-
-        fetch("./lang.json").then(data=>data.json()).then(lang=>injectLang(lang))
-    </script>
+    <script src="./magazine.js"></script>
 </html>
