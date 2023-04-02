@@ -1,0 +1,318 @@
+<style>
+.top-header{
+   font-size: 38px;
+}
+@media screen and (max-width: 550px) {
+    h1{
+       font-size :24px;
+    }
+    .top-header{
+       font-size: 28px;
+    }
+}
+
+.rb-banner-wrapper{
+		text-align: center;
+	}
+	.rb-banner-left, .rb-banner-right{
+		float: left;
+		padding: 20px 0;
+	}
+	.rb-banner-left{
+    	width: 49%;
+		border-right: 2px solid #c7c0c0;
+	}
+    .rb-banner-right{
+    	width: 50%;
+	}
+	.rb-banner-left .link-text, .rb-banner-right .link-text{
+		color: #222;
+	}
+	.rb-banner-left .link-text:hover, .rb-banner-right .link-text:hover{
+		color: #315b7c;
+		cursor: pointer;
+	}
+	#popmake-107171{
+	    background-color: rgba(255, 255, 255, 0.9);
+	}
+    .pum-close.popmake-close{
+        display:none;
+    }
+
+    .body--magazine{
+        overflow: hidden;
+    }
+
+    
+    #magazineIframe{
+        display: block;
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        z-index: 100;
+    }
+
+    #magazineIframe.magazine--hidden{
+        display: none;
+    }
+
+    #magazineIframe_close_btn{
+        display: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50px;
+        right: 15px;
+        background: rgba(0,0,0,.8);
+        color: white;
+        cursor: pointer;
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+
+    .magazineIframe_close_btn--show{
+        display: flex;
+    }
+
+    .body--magazine{
+        display: block;
+    }
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(254, 254, 254,0.9);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" style="display:none">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  
+  <div class="modal-content">
+    <span class="close" style="display:none">&times;</span>
+   
+   <div class="rb-banner-wrapper">
+      <h1 class="top-header">Dove vuoi andare ?</h1>
+      <div class="rb-banner-left">
+          <h1>
+              <div class="link-text" onclick="javascript:{verifyCookie(this); toggleMagazine()}" href="http://www.rbcasting.com">
+                Magazine
+                <iframe id="magazineIframe" class="magazine--hidden" src="./magazine.html" frameborder="0"></iframe>
+            </div>
+          </h1>
+      </div>
+      <div class="rb-banner-right">
+          <h1>
+              <div class="link-text" onclick="verifyCookie(this)" href="http://www.rbcasting.com/rb/">Casting</div>
+          </h1>
+      </div>
+
+      <div id="close-popup">
+      <div id="close" style="display: none;">
+
+      </div>
+      <input id="popupShow" type="checkbox" /> non chiedere più
+
+	</div>
+</div>
+   
+   
+  </div>
+
+</div>
+
+<script>
+
+
+jQuery(document).ready(function(){
+	/*getCookie(document.referrer)*/
+	var prevUrl = document.referrer;
+	var visitorUrl=getCookie("visitorUrl");
+    	if((prevUrl && (prevUrl.indexOf('rbcasting.com/rb') == -1)) || !prevUrl ){
+    
+            if((visitorUrl !== "" ) || (prevUrl && (prevUrl.indexOf('rbcasting.com/rb') != -1))){
+if(visitorUrl.indexOf('rbcasting.com/rb')!= -1){
+location.href = visitorUrl;
+}                
+            }
+            else{
+            	jQuery('.td-header-main-menu').css('z-index',1);
+            	jQuery('#myModal').css("display", "block");
+            }
+        }
+
+    initMagazine()
+});
+
+
+function verifyCookie(elem){
+    var url = jQuery(elem).attr("href");
+    var isChecked = jQuery('#popupShow').is(':checked');
+	
+    if(isChecked){
+    	setCookie("visitorUrl",url, 90);
+    }
+    
+    if(url.indexOf("/rb") == -1){
+    	jQuery('#myModal').css('display','none');
+    }
+    else{
+    	location.href = url;
+    }
+}
+/* 
+function injectMagazine(){
+
+    const html = `
+    `
+
+} */
+const iframeMagazine = document.querySelector("#magazineIframe")
+
+function initMagazine(){
+    debugger
+    const ID_BTN = "magazineIframe_close_btn"
+    
+    if(iframeMagazine){
+        iframeMagazine.parentElement.removeChild(iframeMagazine)
+        iframeMagazine.classList.add("magazine--hidden")
+        document.body.appendChild(iframeMagazine)
+
+        const closebtn = document.createElement("div")
+        closebtn.id = ID_BTN
+        closebtn.onclick = toggleMagazine
+        closebtn.textContent = 'X'
+        document.body.appendChild(closebtn)
+    }
+}
+
+function toggleMagazine(){
+    // debugger
+    const ID_BTN = "magazineIframe_close_btn"
+
+    const CLASS = "magazine--hidden"
+    const CLASS_BTN = "magazineIframe_close_btn--show"
+    const CLASS_BODY = "body--magazine"
+
+    if(iframeMagazine.classList.contains(CLASS)){
+        document.body.classList.remove(CLASS_BODY)
+        iframeMagazine.classList.remove(CLASS)
+        document.querySelector("#"+ID_BTN).classList.add(CLASS_BTN)
+        document.body.style.overflow = 'unset'
+    }
+    else{
+        document.body.classList.add(CLASS_BODY)
+        iframeMagazine.classList.add(CLASS)
+        document.querySelector("#"+ID_BTN).classList.remove(CLASS_BTN)
+        document.body.style.overflow = 'hidden'
+    }
+}
+
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+/*Cookie*/
+
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+       user = prompt("Please enter your name:","");
+       if (user != "" && user != null) {
+           setCookie("username", user, 30);
+       }
+    }
+}
+
+
+
+</script>
+
