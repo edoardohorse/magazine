@@ -1,5 +1,14 @@
 {
 
+    "nav_talent" : "Occhio al talento",
+    "nav_events" : "Eventi",
+    "nav_specials" : "Speciali",
+    "nav_articles" : "Articoli",
+    "nav_news" : "News",
+    "nav_casting" : "Casting",
+    "nav_castlist" : "Cast list Inserisci",
+    "nav_actors" : "Cerca attori",
+    "placeholder_search": "Ricerca",
     
     "search_title": "<b>Trova</b> i professionisti del settore",
     "placeholder_artist": "Nome artista",
