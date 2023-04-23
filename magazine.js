@@ -1,20 +1,24 @@
 const DOMAIN = "https://testi.rbcasting.com";
 const URL_CASTLIST = (start, end)=>{ return `/api/jsonws/rb.castlist/get-public-group-cast-lists/start/${start}/end/${end}`}
 const URL_LANG = (x)=>{return `./lang/lang-${x}.json`}
+const URL_LINKS = `./links.json`
 const CLASS_CASTING_PRIMARY = "casting_images--primary"
 const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
+const ATTRIBUTE_ELEMENT_CONTENT = "idContent"
+const ATTRIBUTE_ELEMENT_ATTR = "idContentAttribute"
 
+const N_CASTLIST = 6
 const languagesCode = ["it", "en", "es", "fr"]
 
-let lang, castlist, magazine = null
+let lang, castlist, magazine, links = null
 
 
-async function loadCastlist(start = 0, end = 6){
-    const url = DOMAIN + URL_CASTLIST(start, end)
-    return fetch(url)
-        .then(data=>data.json())
-        .then(json=>json)
+async function loadCastlist(start = 0, end = N_CASTLIST) {
+  const url = DOMAIN + URL_CASTLIST(start, end);
+  return fetch(url)
+    .then((data) => data.json())
+    .then((json) => json);
 }
 
 async function loadLang(code = "it") {
@@ -38,19 +42,44 @@ async function loadLang(code = "it") {
 function injectLang(lang) {
     // debugger;
     const inject = (el, lang) => {
-        const key = el.getAttribute("texted");
+        const key = el.getAttribute(ATTRIBUTE_ELEMENT_CONTENT);
         const value = lang[key] || null;
         if (value) {
-            if (el.hasAttribute("textedAttribute")) {
-            el.setAttribute(el.getAttribute("textedAttribute"), value);
-            } else el.innerHTML = value;
+            if (el.hasAttribute(ATTRIBUTE_ELEMENT_ATTR)) {
+                el.setAttribute(el.getAttribute(ATTRIBUTE_ELEMENT_ATTR), value);
+            } else
+                el.innerHTML = value;
         }
     };
 
-    const els = Array.from(document.querySelectorAll("[texted]"));
+    const els = Array.from(document.querySelectorAll(`[${ATTRIBUTE_ELEMENT_CONTENT}]`));
     els.forEach((el) => inject(el, lang));
 
     console.info(`${Object.keys(lang).length} label injected`, lang);
+}
+
+async function loadLinks(){
+    return fetch(URL_LINKS)
+      .then((data) => data.json())
+      .then((links) => injectLinks(links));
+
+}
+
+async function injectLinks(links) {
+  const inject = (el, links) => {
+    const key = el.getAttribute(ATTRIBUTE_ELEMENT_CONTENT);
+    const value = key in links? links[key] : null;
+    if (value) {
+      el.href = value;
+    }
+  };
+
+  const els = Array.from(
+    document.querySelectorAll(`a[${ATTRIBUTE_ELEMENT_CONTENT}]`)
+  );
+  els.forEach((el) => inject(el, links));
+
+  console.info(`${Object.keys(links).length} links injected`, links);
 }
 
 function newHoverableImage(image){
@@ -118,12 +147,14 @@ function loadMagazine(){
 
 async function init(){
     await loadLang()
+    links    = await loadLinks()
     castlist = await loadCastlist()
     magazine = await loadMagazine()
 
     // console.log(lang)
     
     injectCastlist(castlist)
+    // injectLinks(links)
     // injectMagazine(magazine)
 }
 

@@ -20,19 +20,19 @@
                     <div class="dropdown">
                         <span>Magazine <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
                         <ul>
-                            <li><a texted="nav_talent" href="https://www.rbcasting.com/occhio-talento/"></a></li>
-                            <li><a texted="nav_events" href="https://www.rbcasting.com/eventi/"></a> </li>
-                            <li><a texted="nav_specials" href="https://www.rbcasting.com/speciali/"></a> </li>
-                            <li><a texted="nav_articles" href="https://www.rbcasting.com/altri-articoli/"></a></li>
-                            <li><a texted="nav_news" href="https://www.rbcasting.com/flash-news/"></a></li>
+                            <li><a idContent="nav_talent"  ></a></li>
+                            <li><a idContent="nav_events"  ></a> </li>
+                            <li><a idContent="nav_specials"></a> </li>
+                            <li><a idContent="nav_articles"></a></li>
+                            <li><a idContent="nav_news"    ></a></li>
                         </ul>
                     </div>
                     <div class="dropdown">
                         <span>Casting <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
                         <ul>
-                            <li><a texted="nav_casting" href=""></a></li>
-                            <li><a texted="nav_castlist" href=""></a></li>
-                            <li><a texted="nav_actors" href=""></a></li>
+                            <li><a idContent="nav_casting"></a></li>
+                            <li><a idContent="nav_castlist"></a></li>
+                            <li><a idContent="nav_actors"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="navbar--right">
                     <form action="">
                         <div id="search_nav">
-                            <input type="search" texted="placeholder_search" textedAttribute="placeholder">
+                            <input type="search" idContent="placeholder_search" idContentAttribute="placeholder">
                             <button class="search_nav_btn">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -50,13 +50,13 @@
                         <!-- <span><i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span> -->
                         <span id="languageSelected"></span>
                         <ul>
-                            <li onclick="loadLang('it')" class="flag-it"><i class="flag"></i><span texted="flag-it"></span></li>
-                            <li onclick="loadLang('en')" class="flag-en"><i class="flag"></i><span texted="flag-en"></span></li>
-                            <li onclick="loadLang('es')" class="flag-es"><i class="flag"></i><span texted="flag-es"></span></li>
-                            <li onclick="loadLang('fr')" class="flag-fr"><i class="flag"></i><span texted="flag-fr"></span></li>
+                            <li onclick="loadLang('it')" class="flag-it"><i class="flag"></i><span idContent="flag-it"></span></li>
+                            <li onclick="loadLang('en')" class="flag-en"><i class="flag"></i><span idContent="flag-en"></span></li>
+                            <li onclick="loadLang('es')" class="flag-es"><i class="flag"></i><span idContent="flag-es"></span></li>
+                            <li onclick="loadLang('fr')" class="flag-fr"><i class="flag"></i><span idContent="flag-fr"></span></li>
                         </ul>
                     </div>
-
+                    <!-- TODO /c/portal/login click user -->
                 </div>
             </div>
             <!-- <img src="./img/logo_colored.png" alt="./magazine/img/logo_colored.png"> -->
@@ -65,31 +65,31 @@
             <h2 class="title">RB C<span>asting</span></h2>
             <section id="search">
 
-                <h3 texted="search_title"></h3>
+                <h3 idContent="search_title"></h3>
                 <div class="search_input_wrapper">
                     <form action="https://testi.rbcasting.com/search" method="GET">
                         <div class="search_input">
                             <!-- TODO action https://testi.rbcasting.com/search?q=pippo -->
                             <!-- TODO https://rbcasting.com/rb/search?q=pippo -->
                             <input type="search" class="searchbox" name="q"
-                                texted="placeholder_artist" textedAttribute="placeholder">
+                                idContent="placeholder_artist" idContentAttribute="placeholder">
                             <div class="box"></div>
                             <button class="search_input_btn btn_icon"
-                                texted="btn_search_artist" textedAttribute="title"></button>
+                                idContent="btn_search_artist" idContentAttribute="title"></button>
                         </div>
                     </form>
-                    <a href="" class="btn_lnk" texted="btn_search_advance"></a>
+                    <a class="btn_lnk" idContent="btn_search_advance"></a>
                 </div>
             </section>
             <section id="icons">
-                <div class="icons_btn"><a data-icon="plus" href="" class="btn_icon"></a><p texted="btn_lnk_create_casting"></p></div>
-                <div class="icons_btn"><a data-icon="users" href="" class="btn_icon"></a><p texted="btn_lnk_users"></p></div>
-                <div class="icons_btn"><a data-icon="casting" href="" class="btn_icon"></a><p texted="btn_lnk_casting"></p></div>
-                <div class="icons_btn"><a data-icon="magazine" href="" class="btn_icon"></a><p texted="btn_lnk_magazine"></p></div>
+                <div class="icons_btn"><a data-icon="plus"  idContent="lnk_create_casting" class="btn_icon"></a><p idContent="btn_lnk_create_casting"></p></div>
+                <div class="icons_btn"><a data-icon="users" idContent="lnk_users" class="btn_icon"></a><p idContent="btn_lnk_users"></p></div>
+                <div class="icons_btn"><a data-icon="casting"   idContent="lnk_casting" class="btn_icon"></a><p idContent="btn_lnk_casting"></p></div>
+                <div class="icons_btn"><a data-icon="magazine"  idContent="lnk_magazine" class="btn_icon"></a><p idContent="btn_lnk_magazine"></p></div>
             </section>
             <section id="slideshow_wrapper">
-                <h2 texted="magazine_title"></h2>
-                <p texted="magazine_subtitle"></p>
+                <h2 idContent="magazine_title"></h2>
+                <p idContent="magazine_subtitle"></p>
                 <div id="slideshow_magazine">
                     <!-- <button class="btn_prev"><</button> -->
                     <div class="splide" role="group" aria-label="Splide Basic HTML Example">
@@ -112,21 +112,21 @@
                         <div class="search_input">
                             <!-- TODO search magazine -->
                             <input type="search" class="searchbox" name="search_magazine"
-                                texted="placeholder_magazine" textedAttribute="placeholder">
+                                idContent="placeholder_magazine" idContentAttribute="placeholder">
                             <div class="box"></div>
                             <button class="search_input_btn btn_icon"
-                                texted="btn_search_magazine" textedAttribute="title"></button>
+                                idContent="btn_search_magazine" idContentAttribute="title"></button>
                         </div>
                     </form>
-                    <a href="" class="btn_lnk" texted="btn_lnk_magazine"></a>
+                    <a class="btn_lnk" idContent="btn_lnk_magazine"></a>
                 </div>
             </section>
             <section id="opportunita_wrapper">
-                <h2 texted="opportunita_title"></h2>
-                <p texted="opportunita_subtitle"></p>
+                <h2 idContent="opportunita_title"></h2>
+                <p idContent="opportunita_subtitle"></p>
                 <div class="opportunita">
                     <section >
-                        <header texted="section_opportunita_attore">
+                        <header idContent="section_opportunita_attore">
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -137,7 +137,7 @@
                         </main>
                     </section>
                     <section>
-                        <header texted="section_opportunita_casting_director"></b>
+                        <header idContent="section_opportunita_casting_director"></b>
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -149,7 +149,7 @@
                         
                     </section>
                     <section>
-                        <header texted="section_opportunita_agente">
+                        <header idContent="section_opportunita_agente">
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -161,7 +161,7 @@
 
                     </section>
                     <section>
-                        <header texted="section_opportunita_audizione">
+                        <header idContent="section_opportunita_audizione">
                         </header>
                         <main>
                             <div class="opportunita_content">
@@ -173,16 +173,16 @@
 
                     </section>
                 </div>
-                <a href="" class="btn_lnk btn_lnk--uppercase" texted="btn_login"></a>
-                <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" texted="btn_signin"></a>
-                <a href="" class="lnk" texted="btn_lnk_guest"></a>
+                <a class="btn_lnk btn_lnk--uppercase" idContent="btn_login"></a>
+                <a class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_signin"></a>
+                <a class="lnk" idContent="btn_lnk_guest"></a>
             </section>
             <section id="casting">
                 <div class="casting_info">
-                    <h2 texted="casting_title"></h2>
+                    <h2 idContent="casting_title"></h2>
                     <div class="casting_info_btns">
-                        <a href="" class="btn_lnk btn_lnk--uppercase" texted="btn_lnk_castlist"></a>
-                         <a href="" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" texted="btn_lnk_create_casting"></a>
+                        <a class="btn_lnk btn_lnk--uppercase" idContent="btn_lnk_castlist"></a>
+                         <a class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_lnk_create_casting"></a>
                     </div>
                 </div>
                 <div id="casting_images" class="casting_images"></div>
@@ -191,7 +191,7 @@
                 
                 <div class="footer_content">
                     <!-- <div class="footer_lnks">/ -->
-                        <a href="" class="lnk" texted="link_privacy_policy">Privacy Policy</a>
+                        <a class="lnk" idContent="lnk_privacy_policy">Privacy Policy</a>
                         
                     <!-- </div> -->
                     <div class="footer_logo">
@@ -199,18 +199,15 @@
                         <img width="124" height="56" src="https://testi.rbcasting.com/o/profile-theme/images/company_logo.gif"
                         alt="./magazine/img/logo.png">
                         <div class="footer_social">
-                            <a href="https://www.facebook.com/rbcasting/" target="_blank"><i
-                                class="fa-brands fa-facebook-square"></i></a>
-                                <a href="https://www.instagram.com/rbcasting/" target="_blank"><i
-                                    class="fa-brands fa-twitter"></i></a>
-                                    <a href="https://twitter.com/rbcasting" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                                    <a href="https://www.youtube.com/user/RBcasting" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                    </div>
+                            <a idContent="lnk_fb" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a idContent="lnk_ig" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a idContent="lnk_tw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a idContent="lnk_yt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
                     </div>
-                    <a href="" class="lnk" texted="link_cookie_policy"></a>
+                    <a class="lnk" idContent="lnk_cookie_policy"></a>
                 </div>
-                <p texted="copyright"></p>
+                <p idContent="copyright"></p>
             </footer>
         </main>
     </body>

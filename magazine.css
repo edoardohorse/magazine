@@ -58,6 +58,7 @@ form{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 1rem;
+    height: 100%;
 }
 
 body > main {
@@ -499,7 +500,8 @@ section {
 }
 
 #opportunita_wrapper > a {
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    /* text-decoration: underline; */
 }
 
 /* SECTION CASTING */
@@ -645,6 +647,10 @@ footer .lnk{
     width: 100%;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.footer_content a{
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1305px) {
@@ -799,7 +805,7 @@ footer .lnk{
     padding: 0;
     background-color: white;
     margin: 0;
-    top: calc(var(--header_height) - 15px);
+    top: calc(var(--header_height) - 12px);
     left: -12px;
     border-radius: 4px;
     border: 1px solid rgb(0 0 0 / 15%);
@@ -839,6 +845,7 @@ footer .lnk{
     display: flex;
     gap: 5px;
     align-items: center;
+    user-select: none;
 }
 
 .dropdown:hover ul, .dropdown ul:hover {
