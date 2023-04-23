@@ -33,7 +33,7 @@ body > header {
 }
 
 header img {
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 form{
@@ -42,17 +42,26 @@ form{
 
 
 .navbar{
+    /* align-items: center; */
+    border-width: 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.navbar_content {
+    width: 100%;
+    max-width: 1100px;
     align-items: center;
     border-width: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 1rem;
-    position: relative;
 }
 
 body > main {
-    margin-top: 80px;
+    margin-top: var(--header_height);
 }
 
 main > h2 {
@@ -62,7 +71,8 @@ main > h2 {
     text-transform: uppercase;
     color: rgb(251, 212, 43);
     text-align: center;
-    margin: 20px 0 48px;
+    margin-bottom: 40px;
+    padding-top: 30px;
 }
 
 h2 {
@@ -803,7 +813,7 @@ footer .lnk{
 .dropdown li {
     list-style: none;
     box-sizing: border-box;
-    padding: 5px 14px;
+    padding: 5px 15px;
     font-size: 1em;
     /* margin-bottom: 5px; */
     display: flex;
@@ -823,11 +833,11 @@ footer .lnk{
 }
 
 .dropdown > span {
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     height: 100%;
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
 }
 

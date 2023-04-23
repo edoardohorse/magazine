@@ -12,50 +12,52 @@
     </head>
     <body>
         <header class="navbar">
-            <div class="navbar--left">
-                <img width="124" height="56" src="https://testi.rbcasting.com/o/profile-theme/images/company_logo.gif"
-                    alt="./magazine/img/logo.png">
-                
-                <div class="dropdown">
-                    <span>Magazine <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
-                    <ul>
-                        <li><a texted="nav_talent" href="https://www.rbcasting.com/occhio-talento/"></a></li>
-                        <li><a texted="nav_events" href="https://www.rbcasting.com/eventi/"></a> </li>
-                        <li><a texted="nav_specials" href="https://www.rbcasting.com/speciali/"></a> </li>
-                        <li><a texted="nav_articles" href="https://www.rbcasting.com/altri-articoli/"></a></li>
-                        <li><a texted="nav_news" href="https://www.rbcasting.com/flash-news/"></a></li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <span>Casting <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
-                    <ul>
-                        <li><a texted="nav_casting" href=""></a></li>
-                        <li><a texted="nav_castlist" href=""></a></li>
-                        <li><a texted="nav_actors" href=""></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="navbar--right">
-                <form action="">
-                    <div id="search_nav">
-                        <input type="search" texted="placeholder_search" textedAttribute="placeholder">
-                        <button class="search_nav_btn">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
+            <div class="navbar_content">
+                <div class="navbar--left">
+                    <img width="124" height="56" src="https://testi.rbcasting.com/o/profile-theme/images/company_logo.gif"
+                        alt="./magazine/img/logo.png">
+                    
+                    <div class="dropdown">
+                        <span>Magazine <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
+                        <ul>
+                            <li><a texted="nav_talent" href="https://www.rbcasting.com/occhio-talento/"></a></li>
+                            <li><a texted="nav_events" href="https://www.rbcasting.com/eventi/"></a> </li>
+                            <li><a texted="nav_specials" href="https://www.rbcasting.com/speciali/"></a> </li>
+                            <li><a texted="nav_articles" href="https://www.rbcasting.com/altri-articoli/"></a></li>
+                            <li><a texted="nav_news" href="https://www.rbcasting.com/flash-news/"></a></li>
+                        </ul>
                     </div>
-                </form>
-                <div class="dropdown dropdown--to-right" id="dropdown_languages">
-                    <!-- <span><i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span> -->
-                    <span id="languageSelected"></span>
-                    <ul>
-                        <li onclick="loadLang('it')" class="flag-it"><i class="flag"></i><span texted="flag-it"></span></li>
-                        <li onclick="loadLang('en')" class="flag-en"><i class="flag"></i><span texted="flag-en"></span></li>
-                        <li onclick="loadLang('es')" class="flag-es"><i class="flag"></i><span texted="flag-es"></span></li>
-                        <li onclick="loadLang('fr')" class="flag-fr"><i class="flag"></i><span texted="flag-fr"></span></li>
-                    </ul>
+                    <div class="dropdown">
+                        <span>Casting <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
+                        <ul>
+                            <li><a texted="nav_casting" href=""></a></li>
+                            <li><a texted="nav_castlist" href=""></a></li>
+                            <li><a texted="nav_actors" href=""></a></li>
+                        </ul>
+                    </div>
                 </div>
 
+                <div class="navbar--right">
+                    <form action="">
+                        <div id="search_nav">
+                            <input type="search" texted="placeholder_search" textedAttribute="placeholder">
+                            <button class="search_nav_btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="dropdown dropdown--to-right" id="dropdown_languages">
+                        <!-- <span><i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span> -->
+                        <span id="languageSelected"></span>
+                        <ul>
+                            <li onclick="loadLang('it')" class="flag-it"><i class="flag"></i><span texted="flag-it"></span></li>
+                            <li onclick="loadLang('en')" class="flag-en"><i class="flag"></i><span texted="flag-en"></span></li>
+                            <li onclick="loadLang('es')" class="flag-es"><i class="flag"></i><span texted="flag-es"></span></li>
+                            <li onclick="loadLang('fr')" class="flag-fr"><i class="flag"></i><span texted="flag-fr"></span></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
             <!-- <img src="./img/logo_colored.png" alt="./magazine/img/logo_colored.png"> -->
         </header>
