@@ -806,7 +806,7 @@ footer .lnk{
 .dropdown {
     height: 100%;
     position: relative;
-    width: 100px;
+    min-width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -852,6 +852,7 @@ footer .lnk{
 #dropdown_languages {
     justify-content: flex-start;
     margin-left: 1em;
+    min-width: unset;
     width: 30px;
 }
 
