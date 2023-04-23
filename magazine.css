@@ -597,14 +597,20 @@ section {
 footer {
     background: #343a40 !important;
     display: flex;
-    /* height: 100px; */
+    height: 236px;
     box-shadow: 0px -2px 11px -6px black;
     flex-direction: column;
     z-index: 10;
     position: relative;
     align-items: center;
-    padding: 1em 1em 0;
+    padding: 3em 1em;
     color: white;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+footer > *{
+    max-width: 960px;
 }
 
 .footer_lnks {
@@ -616,6 +622,7 @@ footer {
 
 footer .lnk{
     color: white;
+    font-size: 1rem;
 }
 
 .footer_content img {
@@ -624,8 +631,10 @@ footer .lnk{
 
 .footer_content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 1305px) {
@@ -651,7 +660,7 @@ footer .lnk{
         align-items: center;
         justify-content: center;
         /* flex-direction: column; */
-        /* height: auto; */
+        height: auto;
         /* gap: 50px; */
         /* width: calc(100% - 2em); */
     }
@@ -948,4 +957,31 @@ div#search_nav {
 
 #languageSelected span {
     display: none;
+}
+
+.footer_social a {
+    /* width: 47px; */
+    display: inline-block;
+    height: 27px;
+}
+
+.footer_social .fa-brands{
+    color: white;
+    font-size: 24px;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer_social {
+    display: flex;
+    gap: 24px;
+}
+
+footer > p {
+    margin: 0;
 }
