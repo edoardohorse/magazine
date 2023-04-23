@@ -9,6 +9,11 @@
     "nav_castlist" : "Aggiungi Castlist",
     "nav_actors" : "Cerca attori",
     "placeholder_search": "Ricerca",
+
+    "flag-it":"Italiano",
+    "flag-en":"Inglese",
+    "flag-es":"Spagnolo",
+    "flag-fr":"Francese",
     
     "search_title": "<b>Trova</b> i professionisti del settore",
     "placeholder_artist": "Nome artista",
@@ -34,7 +39,7 @@
     "section_opportunita_audizione":"<span>Inserisci</span><b>audizione</b>",
     "btn_login":"Accedi",
     "btn_signin":"Registrati",
-    "btn_lnk_guest":"entra come ospite",
+    "btn_lnk_guest":"...entra come ospite",
 
     "casting_title":"IL CASTING",
     "btn_lnk_castlist":"Sfoglia caslist"

@@ -37,10 +37,25 @@
             </div>
 
             <div class="navbar--right">
-                <div id="search_nav">
-                    <input type="search" texted="placeholder_search" textedAttribute="placeholder">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="">
+                    <div id="search_nav">
+                        <input type="search" texted="placeholder_search" textedAttribute="placeholder">
+                        <button class="search_nav_btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="dropdown dropdown--to-right" id="dropdown_languages">
+                    <!-- <span><i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span> -->
+                    <span id="languageSelected"></span>
+                    <ul>
+                        <li onclick="loadLang('it')" class="flag-it"><i class="flag"></i><span texted="flag-it"></span></li>
+                        <li onclick="loadLang('en')" class="flag-en"><i class="flag"></i><span texted="flag-en"></span></li>
+                        <li onclick="loadLang('es')" class="flag-es"><i class="flag"></i><span texted="flag-es"></span></li>
+                        <li onclick="loadLang('fr')" class="flag-fr"><i class="flag"></i><span texted="flag-fr"></span></li>
+                    </ul>
                 </div>
+
             </div>
             <!-- <img src="./img/logo_colored.png" alt="./magazine/img/logo_colored.png"> -->
         </header>
@@ -50,11 +65,11 @@
 
                 <h3 texted="search_title"></h3>
                 <div class="search_input_wrapper">
-                    <form action="">
+                    <form action="https://testi.rbcasting.com/search" method="GET">
                         <div class="search_input">
                             <!-- TODO action https://testi.rbcasting.com/search?q=pippo -->
                             <!-- TODO https://rbcasting.com/rb/search?q=pippo -->
-                            <input type="text" class="searchbox" name="search_professionista"
+                            <input type="search" class="searchbox" name="q"
                                 texted="placeholder_artist" textedAttribute="placeholder">
                             <div class="box"></div>
                             <button class="search_input_btn btn_icon"
@@ -93,7 +108,8 @@
                 <div class="search_input_wrapper">
                     <form action="">
                         <div class="search_input">
-                            <input type="text" class="searchbox" name="search_magazine"
+                            <!-- TODO search magazine -->
+                            <input type="search" class="searchbox" name="search_magazine"
                                 texted="placeholder_magazine" textedAttribute="placeholder">
                             <div class="box"></div>
                             <button class="search_input_btn btn_icon"

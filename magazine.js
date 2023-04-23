@@ -1,29 +1,43 @@
 const DOMAIN = "https://testi.rbcasting.com";
 const URL_CASTLIST = (start, end)=>{ return `/api/jsonws/rb.castlist/get-public-group-cast-lists/start/${start}/end/${end}`}
-const URL_LANG = "./lang.json"
+const URL_LANG = (x)=>{return `./lang/lang-${x}.json`}
 const CLASS_CASTING_PRIMARY = "casting_images--primary"
 const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
+
+const languagesCode = ["it", "en", "es", "fr"]
 
 let lang, castlist, magazine = null
 
 
 async function loadCastlist(start = 0, end = 6){
     const url = DOMAIN + URL_CASTLIST(start, end)
-    return fetch(url).then(data=>data.json()).then(json=>json)
+    return fetch(url)
+        .then(data=>data.json())
+        .then(json=>json)
 }
 
-async function loadLang(){
-    return fetch(URL_LANG)
-      .then((data) => data.json())
-      .then((lang) => lang);
+async function loadLang(code = "it") {
+    if(document.documentElement.getAttribute("lang") == code) return 
+
+  document.documentElement.setAttribute("lang", code);
+  const url = URL_LANG(document.documentElement.lang);
+  const liChoosen = document.querySelector(`.flag-${code}`);
+  if(document.querySelector('.flag--hide')){
+    document.querySelector(".flag--hide").classList.remove('flag--hide');
+  }
+
+  document.getElementById("languageSelected").innerHTML = null
+  document.getElementById("languageSelected").appendChild(liChoosen.cloneNode(true))
+  liChoosen.classList.add('flag--hide');
+  return fetch(url)
+    .then((data) => data.json())
+    .then((lang) => injectLang(lang))
 }
 
 function injectLang(lang) {
     // debugger;
-    let n = 0
     const inject = (el, lang) => {
-        n++
         const key = el.getAttribute("texted");
         const value = lang[key] || null;
         if (value) {
@@ -36,7 +50,7 @@ function injectLang(lang) {
     const els = Array.from(document.querySelectorAll("[texted]"));
     els.forEach((el) => inject(el, lang));
 
-    console.info(`${n} label injected`, lang)
+    console.info(`${Object.keys(lang).length} label injected`, lang);
 }
 
 function newHoverableImage(image){
@@ -103,11 +117,12 @@ function loadMagazine(){
 
 
 async function init(){
-    lang = await loadLang()
+    await loadLang()
     castlist = await loadCastlist()
     magazine = await loadMagazine()
+
     // console.log(lang)
-    injectLang( lang )
+    
     injectCastlist(castlist)
     // injectMagazine(magazine)
 }
