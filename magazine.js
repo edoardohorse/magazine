@@ -58,6 +58,7 @@ function injectLang(lang) {
 function newHoverableImage(image){
     return  `<a href="${image.url}" class="hoverable">
                 <img src="${DOMAIN + image.posterId}">
+                <span>${image.title}</span>
             </a>`;
 }
 
