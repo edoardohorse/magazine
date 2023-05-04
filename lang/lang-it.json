@@ -14,6 +14,14 @@
     "flag-en":"Inglese",
     "flag-es":"Spagnolo",
     "flag-fr":"Francese",
+
+    "login_header":"Accedi",
+    "login_address":"Indirizzo Email",
+    "login_password":"Password",
+    "login_rememberme": "Ricordami",
+    "login_btn": "Accedi",
+    "login_lnk_create_account": "Crea Account",
+    "login_lnk_forgot_password": "Password Dimenticata",
     
     "search_title": "<b>Trova</b> i professionisti del settore",
     "placeholder_artist": "Nome artista",

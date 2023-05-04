@@ -4,6 +4,8 @@ const URL_LANG = (x)=>{return `./lang/lang-${x}.json`}
 const CLASS_CASTING_PRIMARY = "casting_images--primary"
 const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
+const CLASS_MODAL_OPEN = "modal--show"
+const CLASS_BODY_HASMODAL = "hasModal"
 
 const languagesCode = ["it", "en", "es", "fr"]
 
@@ -127,5 +129,13 @@ async function init(){
     // injectMagazine(magazine)
 }
 
+function openModal(id){
+    document.body.classList.add(CLASS_BODY_HASMODAL);
+    document.getElementById(id).classList.add(CLASS_MODAL_OPEN);
+}
+function closeModal(id){
+    document.body.classList.remove(CLASS_BODY_HASMODAL)
+    document.getElementById(id).classList.remove(CLASS_MODAL_OPEN);
+}
 
 window.addEventListener('DOMContentLoaded',init)

@@ -14,6 +14,14 @@
     "flag-en":"English",
     "flag-es":"Spanish",
     "flag-fr":"French",
+
+    "login_header": "Login",
+    "login_address": "Address Email",
+    "login_password": "Password",
+    "login_rememberme": "Remember me",
+    "login_btn": "Login",
+    "login_lnk_create_account": "Create Account",
+    "login_lnk_forgot_password": "Forgot Password",
     
     "search_title": "<b>Find</b> professionals in the field",
     "placeholder_artist": "Name artist",
