@@ -11,8 +11,45 @@
 
     </head>
     <body>
+        <div class="modal" id="loginForm">
+            <di class="modal_wrapper">
+                <div class="modal_header">
+                    <h4 idContent="login_header"></h4>
+                    <i class="icon_close" onclick="closeModal('loginForm')"></i>
+                </div>
+                <div class="modal_body">
+                    <form
+                        action="https://testi.rbcasting.com/it/casting?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=1&p_p_state=exclusive&p_p_mode=view&_com_liferay_login_web_portlet_LoginPortlet_javax.portlet.action=%2Flogin%2Flogin&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Flogin&p_auth=asNNFyGh"
+                        method="POST"
+                        name="_com_liferay_login_web_portlet_LoginPortlet_loginFormModal">
+                        <div class="modal_inputs">
+                            <div class="modal_field">
+                                <label for="_com_liferay_login_web_portlet_LoginPortlet_login" idContent="login_address"></label>
+                                <input type="email" required name="_com_liferay_login_web_portlet_LoginPortlet_login">
+                            </div>
+                            <div class="modal_field">
+                                <label for="_com_liferay_login_web_portlet_LoginPortlet_password" idContent="login_password"></label>
+                                <input type="password" required name="_com_liferay_login_web_portlet_LoginPortlet_password">
+                            </div>
+                            <div class="modal_field modal_field--inline">
+                                <input type="checkbox" name="_com_liferay_login_web_portlet_LoginPortlet_rememberMe">
+                                <label for="_com_liferay_login_web_portlet_LoginPortlet_rememberMe" idContent="login_rememberme"></label>
+                            </div>
+                        </div>
+                        <fieldset form="_com_liferay_login_web_portlet_LoginPortlet_loginFormModal">
+                            <button idContent="login_btn">
+                        </fieldset>
+                        <div class="modal_links">
+                            <a href="https://testi.rbcasting.com/it/home?p_p_id=com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet&p_p_lifecycle=0&p_p_state=maximized"
+                                idContent="login_lnk_create_account"></a>
+                            <a href="https://testi.rbcasting.com/it/casting?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fforgot_password&saveLastPath=false"
+                                idContent="login_lnk_forgot_password"></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <header class="navbar">
-            <div class="navbar_content">
                 <div class="navbar--left">
                     <img width="124" height="56" src="https://testi.rbcasting.com/o/profile-theme/images/company_logo.gif"
                         alt="./magazine/img/logo.png">
@@ -36,7 +73,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="navbar--right">
                     <form action="">
                         <div id="search_nav">
@@ -57,8 +93,8 @@
                         </ul>
                     </div>
                     <!-- TODO /c/portal/login click user -->
+                    <div id="btn_login_form" class="btn_lnk" onclick="openModal('loginForm')"></div>
                 </div>
-            </div>
             <!-- <img src="./img/logo_colored.png" alt="./magazine/img/logo_colored.png"> -->
         </header>
         <main>
@@ -126,48 +162,36 @@
                 <p idContent="opportunita_subtitle"></p>
                 <div class="opportunita">
                     <section >
-                        <header idContent="section_opportunita_attore">
+                        <header idContent="header_opportunita_attore">
                         </header>
                         <main>
-                            <div class="opportunita_content">
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
+                            <div class="opportunita_content" idContent="section_opportunita_attore">
                             </div>
                         </main>
                     </section>
                     <section>
-                        <header idContent="section_opportunita_casting_director"></b>
+                        <header idContent="header_opportunita_casting_director"></b>
                         </header>
                         <main>
-                            <div class="opportunita_content">
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
+                            <div class="opportunita_content" idContent="section_opportunita_casting_director">
                             </div>
                         </main>
                         
                     </section>
                     <section>
-                        <header idContent="section_opportunita_agente">
+                        <header idContent="header_opportunita_agente">
                         </header>
                         <main>
-                            <div class="opportunita_content">
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
+                            <div class="opportunita_content" idContent="section_opportunita_agente">
                             </div>
                         </main>
 
                     </section>
                     <section>
-                        <header idContent="section_opportunita_audizione">
+                        <header idContent="header_opportunita_audizione">
                         </header>
                         <main>
-                            <div class="opportunita_content">
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
-                                Lorem ipsum <br>
+                            <div class="opportunita_content" idContent="section_opportunita_audizione">
                             </div>
                         </main>
 

@@ -7,6 +7,8 @@ const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
 const ATTRIBUTE_ELEMENT_CONTENT = "idContent"
 const ATTRIBUTE_ELEMENT_ATTR = "idContentAttribute"
+const CLASS_MODAL_OPEN = "modal--show"
+const CLASS_BODY_HASMODAL = "hasModal"
 
 const N_CASTLIST = 6
 const languagesCode = ["it", "en", "es", "fr"]
@@ -85,6 +87,7 @@ async function injectLinks(links) {
 function newHoverableImage(image){
     return  `<a href="${image.url}" class="hoverable">
                 <img src="${DOMAIN + image.posterId}">
+                <span>${image.title}</span>
             </a>`;
 }
 
@@ -158,5 +161,13 @@ async function init(){
     // injectMagazine(magazine)
 }
 
+function openModal(id){
+    document.body.classList.add(CLASS_BODY_HASMODAL);
+    document.getElementById(id).classList.add(CLASS_MODAL_OPEN);
+}
+function closeModal(id){
+    document.body.classList.remove(CLASS_BODY_HASMODAL)
+    document.getElementById(id).classList.remove(CLASS_MODAL_OPEN);
+}
 
 window.addEventListener('DOMContentLoaded',init)
