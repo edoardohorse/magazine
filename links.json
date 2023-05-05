@@ -1,0 +1,33 @@
+{
+    "nav_talent": "https://www.rbcasting.com/occhio-talento/",
+    "nav_events": "https://www.rbcasting.com/eventi/",
+    "nav_specials": "https://www.rbcasting.com/speciali/",
+    "nav_articles": "https://www.rbcasting.com/altri-articoli/",
+    "nav_news": "https://www.rbcasting.com/flash-news/",
+
+    "nav_casting":"",
+    "nav_castlist":"",
+    "nav_actors":"",
+
+
+    "btn_search_advance":"",
+    "lnk_create_casting":"",
+    "lnk_users":"",
+    "lnk_casting":"",
+    "lnk_magazine":"",
+
+    "btn_login":"",
+    "btn_signin":"",
+    "btn_lnk_guest":"",
+
+    "btn_lnk_castlist":"",
+    "btn_lnk_create_casting":"",
+
+    "lnk_privacy_policy":"",
+    "lnk_cookie_policy":"",
+
+    "lnk_fb":"https://www.facebook.com/rbcasting/",
+    "lnk_ig":"https://www.instagram.com/rbcasting/",
+    "lnk_tw":"https://twitter.com/rbcasting",
+    "lnk_yt": "https://www.youtube.com/user/RBcasting"
+}
