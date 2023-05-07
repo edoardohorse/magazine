@@ -1,6 +1,7 @@
 const DOMAIN = "https://testi.rbcasting.com";
 const URL_CASTLIST = (start, end)=>{ return `/api/jsonws/rb.castlist/get-public-group-cast-lists/start/${start}/end/${end}`}
 const URL_LANG = (x)=>{return `./lang/lang-${x}.json`}
+const URL_NEWS = (x)=>{return `./getNews.php?nPosts=${x}`}
 const URL_LINKS = `./links.json`
 const CLASS_CASTING_PRIMARY = "casting_images--primary"
 const CLASS_CASTING_SECONDARY = "casting_images--secondary"
@@ -11,9 +12,10 @@ const CLASS_MODAL_OPEN = "modal--show"
 const CLASS_BODY_HASMODAL = "hasModal"
 
 const N_CASTLIST = 6
+const N_NEWS = 6
 const languagesCode = ["it", "en", "es", "fr"]
 
-let lang, castlist, magazine, links = null
+let lang, castlist, magazine, links,news = null
 
 
 async function loadCastlist(start = 0, end = N_CASTLIST) {
@@ -39,6 +41,17 @@ async function loadLang(code = "it") {
   return fetch(url)
     .then((data) => data.json())
     .then((lang) => injectLang(lang))
+}
+
+async function loadNews(){
+  const url = URL_NEWS(N_NEWS)
+   return fetch(url)
+     .then((data) => data.json())
+     .then((json) => json);
+}
+
+function injectNews(){
+
 }
 
 function injectLang(lang) {
@@ -147,12 +160,22 @@ function loadMagazine(){
     }).mount();
 }
 
+function openModal(id) {
+  document.body.classList.add(CLASS_BODY_HASMODAL);
+  document.getElementById(id).classList.add(CLASS_MODAL_OPEN);
+}
+function closeModal(id) {
+  document.body.classList.remove(CLASS_BODY_HASMODAL);
+  document.getElementById(id).classList.remove(CLASS_MODAL_OPEN);
+}
 
 async function init(){
     await loadLang()
     links    = await loadLinks()
     castlist = await loadCastlist()
     magazine = await loadMagazine()
+    news = await loadNews()
+    console.log("news",news)
 
     // console.log(lang)
     
@@ -161,13 +184,6 @@ async function init(){
     // injectMagazine(magazine)
 }
 
-function openModal(id){
-    document.body.classList.add(CLASS_BODY_HASMODAL);
-    document.getElementById(id).classList.add(CLASS_MODAL_OPEN);
-}
-function closeModal(id){
-    document.body.classList.remove(CLASS_BODY_HASMODAL)
-    document.getElementById(id).classList.remove(CLASS_MODAL_OPEN);
-}
+
 
 window.addEventListener('DOMContentLoaded',init)
