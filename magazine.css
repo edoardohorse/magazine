@@ -81,6 +81,10 @@ body.hasModal {
     position: relative;
 }
 
+.navbar.isModal{
+    padding-right: 80px;
+}
+
 .navbar--left {
     display: flex;
     align-items: center;

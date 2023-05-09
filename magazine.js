@@ -135,6 +135,19 @@ function injectCastlist(castlist){
     }
 }
 
+function injectNews(news){
+  const list = document.getElementById("slideshow_magazine_list");
+  for(let post of news){
+    list.innerHTML += `
+    <li class="splide__slide">
+        <div class="slideshow_slide">
+            <img src="${post.image}">
+            <div class="slideshow_label">${post.title}</div>
+        </div>
+    </li>`;
+  }
+}
+
 function loadMagazine(){
     new Splide(".splide", {
       perPage: 3,
@@ -172,9 +185,10 @@ function closeModal(id) {
 async function init(){
     await loadLang()
     links    = await loadLinks()
-    castlist = await loadCastlist()
-    magazine = await loadMagazine()
+    // castlist = await loadCastlist()
     news = await loadNews()
+    injectNews(news)
+    magazine = await loadMagazine()
     console.log("news",news)
 
     // console.log(lang)
