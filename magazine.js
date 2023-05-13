@@ -8,8 +8,7 @@ const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
 const ATTRIBUTE_ELEMENT_CONTENT = "idContent"
 const ATTRIBUTE_ELEMENT_ATTR = "idContentAttribute"
-const CLASS_MODAL_OPEN = "modal--show"
-const CLASS_BODY_HASMODAL = "hasModal"
+
 
 const N_CASTLIST = 6
 const N_NEWS = 6
@@ -173,19 +172,12 @@ function loadMagazine(){
     }).mount();
 }
 
-function openModal(id) {
-  document.body.classList.add(CLASS_BODY_HASMODAL);
-  document.getElementById(id).classList.add(CLASS_MODAL_OPEN);
-}
-function closeModal(id) {
-  document.body.classList.remove(CLASS_BODY_HASMODAL);
-  document.getElementById(id).classList.remove(CLASS_MODAL_OPEN);
-}
+
 
 async function init(){
     await loadLang()
     links    = await loadLinks()
-    // castlist = await loadCastlist()
+    castlist = await loadCastlist()
     news = await loadNews()
     injectNews(news)
     magazine = await loadMagazine()
