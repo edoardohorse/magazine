@@ -133,7 +133,6 @@
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
-  <!-- Modal content -->
   
   <div class="modal-content">
     <span class="close" style="display:none">&times;</span>
@@ -173,7 +172,7 @@
 
 jQuery(document).ready(function(){
 	/*getCookie(document.referrer)*/
-	var prevUrl = document.referrer;
+/* 	var prevUrl = document.referrer;
 	var visitorUrl=getCookie("visitorUrl");
     	if((prevUrl && (prevUrl.indexOf('rbcasting.com/rb') == -1)) || !prevUrl ){
     
@@ -186,7 +185,7 @@ location.href = visitorUrl;
             	jQuery('.td-header-main-menu').css('z-index',1);
             	jQuery('#myModal').css("display", "block");
             }
-        }
+        } */
 
     initMagazine()
 });
@@ -254,6 +253,7 @@ function closeMagazine(){
     iframeMagazine.classList.remove(CLASS_MAGAZINE)
     document.querySelector("#"+ID_BTN_MAGAZINE).classList.remove(CLASS_BTN_MAGAZINE)
     document.body.style.overflow = 'unset'
+    document.getElementById("myModal").style.display = 'none'
 }
 
 
