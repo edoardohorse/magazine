@@ -144,7 +144,7 @@
           <h1>
               <div class="link-text" onclick="javascript:{verifyCookie(this); toggleMagazine()}" href="http://www.rbcasting.com">
                 Magazine
-                <iframe id="magazineIframe" class="magazine--hidden" src="/magazine/magazine.html" frameborder="0"></iframe>
+                <iframe id="magazineIframe" class="magazine--hidden" src="/magazine/magazine.php" frameborder="0"></iframe>
             </div>
           </h1>
       </div>
@@ -217,7 +217,7 @@ function injectMagazine(){
 const iframeMagazine = document.querySelector("#magazineIframe")
 
 function initMagazine(){
-    debugger
+    // debugger
     const ID_BTN = "magazineIframe_close_btn"
     
     if(iframeMagazine){

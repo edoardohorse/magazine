@@ -1,3 +1,4 @@
+<?php include_once('../wp-includes/template.php'); ?>
 <html>
     <head>
         <script src="splide.min.js"></script>
@@ -6,97 +7,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/brands.min.js"></script>
 
     </head>
     <body>
-        <div class="modal" id="loginForm">
-            <di class="modal_wrapper">
-                <div class="modal_header">
-                    <h4 idContent="login_header"></h4>
-                    <i class="icon_close" onclick="closeModal('loginForm')"></i>
-                </div>
-                <div class="modal_body">
-                    <form
-                        action="https://testi.rbcasting.com/it/casting?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=1&p_p_state=exclusive&p_p_mode=view&_com_liferay_login_web_portlet_LoginPortlet_javax.portlet.action=%2Flogin%2Flogin&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Flogin&p_auth=asNNFyGh"
-                        method="POST"
-                        name="_com_liferay_login_web_portlet_LoginPortlet_loginFormModal">
-                        <div class="modal_inputs">
-                            <div class="modal_field">
-                                <label for="_com_liferay_login_web_portlet_LoginPortlet_login" idContent="login_address"></label>
-                                <input type="email" required name="_com_liferay_login_web_portlet_LoginPortlet_login">
-                            </div>
-                            <div class="modal_field">
-                                <label for="_com_liferay_login_web_portlet_LoginPortlet_password" idContent="login_password"></label>
-                                <input type="password" required name="_com_liferay_login_web_portlet_LoginPortlet_password">
-                            </div>
-                            <div class="modal_field modal_field--inline">
-                                <input type="checkbox" name="_com_liferay_login_web_portlet_LoginPortlet_rememberMe">
-                                <label for="_com_liferay_login_web_portlet_LoginPortlet_rememberMe" idContent="login_rememberme"></label>
-                            </div>
-                        </div>
-                        <fieldset form="_com_liferay_login_web_portlet_LoginPortlet_loginFormModal">
-                            <button idContent="login_btn">
-                        </fieldset>
-                        <div class="modal_links">
-                            <a href="https://testi.rbcasting.com/it/home?p_p_id=com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet&p_p_lifecycle=0&p_p_state=maximized"
-                                idContent="login_lnk_create_account"></a>
-                            <a href="https://testi.rbcasting.com/it/casting?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fforgot_password&saveLastPath=false"
-                                idContent="login_lnk_forgot_password"></a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <header class="navbar isModal">
-                <div class="navbar--left">
-                    <img width="124" height="56" src="https://testi.rbcasting.com/o/profile-theme/images/company_logo.gif"
-                        alt="./magazine/img/logo.png">
-                    
-                    <div class="dropdown">
-                        <span>Magazine <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
-                        <ul>
-                            <li><a idContent="nav_talent"  ></a></li>
-                            <li><a idContent="nav_events"  ></a> </li>
-                            <li><a idContent="nav_specials"></a> </li>
-                            <li><a idContent="nav_articles"></a></li>
-                            <li><a idContent="nav_news"    ></a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <span>Casting <i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span>
-                        <ul>
-                            <li><a idContent="nav_casting"></a></li>
-                            <li><a idContent="nav_castlist"></a></li>
-                            <li><a idContent="nav_actors"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="navbar--right">
-                    <form action="">
-                        <div id="search_nav">
-                            <input type="search" idContent="placeholder_search" idContentAttribute="placeholder">
-                            <button class="search_nav_btn">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <div class="dropdown dropdown--to-right" id="dropdown_languages">
-                        <!-- <span><i class="fa fa-chevron-down fa-xs" aria-hidden="true"></i></span> -->
-                        <span id="languageSelected"></span>
-                        <ul>
-                            <li onclick="loadLang('it')" class="flag-it"><i class="flag"></i><span idContent="flag-it"></span></li>
-                            <li onclick="loadLang('en')" class="flag-en"><i class="flag"></i><span idContent="flag-en"></span></li>
-                            <li onclick="loadLang('es')" class="flag-es"><i class="flag"></i><span idContent="flag-es"></span></li>
-                            <li onclick="loadLang('fr')" class="flag-fr"><i class="flag"></i><span idContent="flag-fr"></span></li>
-                        </ul>
-                    </div>
-                    <!-- TODO /c/portal/login click user -->
-                    <div id="btn_login_form" class="btn_lnk" onclick="openModal('loginForm')"></div>
-                </div>
-            <!-- <img src="./img/logo_colored.png" alt="./magazine/img/logo_colored.png"> -->
-        </header>
+        <?php include_once('../wp-content/themes/Newsmag/parts/header/magazineMenu.php'); ?>
         <main>
             <h2 class="title">RB C<span>asting</span></h2>
             <section id="search">
@@ -240,5 +156,5 @@
             </footer>
         </main>
     </body>
-    <script src="./magazine.js"></script>
+    <script src="magazine.js"></script>
 </html>
