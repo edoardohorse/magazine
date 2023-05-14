@@ -1,24 +1,18 @@
-const DOMAIN = "https://testi.rbcasting.com";
+const DOMAIN_RB = "https://testi.rbcasting.com";
 const URL_CASTLIST = (start, end)=>{ return `/api/jsonws/rb.castlist/get-public-group-cast-lists/start/${start}/end/${end}`}
-const URL_LANG = (x)=>{return `./lang/lang-${x}.json`}
 const URL_NEWS = (x)=>{return `./getNews.php?nPosts=${x}`}
-const URL_LINKS = `./links.json`
+// const URL_LINKS = `./links.json`;
 const CLASS_CASTING_PRIMARY = "casting_images--primary"
 const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
-const ATTRIBUTE_ELEMENT_CONTENT = "idContent"
-const ATTRIBUTE_ELEMENT_ATTR = "idContentAttribute"
-
 
 const N_CASTLIST = 6
 const N_NEWS = 6
-const languagesCode = ["it", "en", "es", "fr"]
-
-let lang, castlist, magazine, links,news = null
+let castlist, magazine, news = null
 
 
 async function loadCastlist(start = 0, end = N_CASTLIST) {
-  const url = DOMAIN + URL_CASTLIST(start, end);
+  const url = DOMAIN_RB + URL_CASTLIST(start, end);
   return fetch(url)
     .then((data) => data.json())
     .then((json) => json);
@@ -49,9 +43,6 @@ async function loadNews(){
      .then((json) => json);
 }
 
-function injectNews(){
-
-}
 
 function injectLang(lang) {
     // debugger;
@@ -98,7 +89,7 @@ async function injectLinks(links) {
 
 function newHoverableImage(image){
     return  `<a href="${image.url}" class="hoverable">
-                <img src="${DOMAIN + image.posterId}">
+                <img src="${DOMAIN_RB + image.posterId}">
                 <span>${image.title}</span>
             </a>`;
 }
@@ -175,8 +166,8 @@ function loadMagazine(){
 
 
 async function init(){
-    await loadLang()
-    links    = await loadLinks()
+    // await loadLang()
+    // links    = await loadLinks()
     castlist = await loadCastlist()
     news = await loadNews()
     injectNews(news)
