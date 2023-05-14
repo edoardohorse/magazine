@@ -245,11 +245,13 @@ function toggleMagazine(){
     else openMagazine()
 }
 function openMagazine(){
+    document.querySelector("#navbarMenu").classList.add("isModal")
     iframeMagazine.classList.add(CLASS_MAGAZINE)
     document.querySelector("#"+ID_BTN_MAGAZINE).classList.add(CLASS_BTN_MAGAZINE)
     document.body.style.overflow = 'hidden'
 }
 function closeMagazine(){
+    document.querySelector("#navbarMenu").classList.remove("isModal")
     iframeMagazine.classList.remove(CLASS_MAGAZINE)
     document.querySelector("#"+ID_BTN_MAGAZINE).classList.remove(CLASS_BTN_MAGAZINE)
     document.body.style.overflow = 'unset'

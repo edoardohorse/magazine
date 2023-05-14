@@ -12,7 +12,7 @@
 
     </head>
     <body>
-        <?php include_once('../wp-content/themes/Newsmag/parts/header/magazineMenu.php'); ?>
+        <?php include_once('../wp-content/themes/Newsmag-child/parts/header/magazineMenu.php'); ?>
         <main>
             <h2 class="title">RB C<span>asting</span></h2>
             <section id="search">
