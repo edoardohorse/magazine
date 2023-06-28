@@ -25,6 +25,8 @@ form {
 
 body > main {
     margin-top: 80px;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 main>h2 {
@@ -106,6 +108,11 @@ section {
 .btn_lnk--secondary {
     color: white;
     background: black;
+}
+
+.btn_lnk--tertiary {
+    background-color: #343a40;
+    color: white;
 }
 
 .btn_lnk--uppercase {
@@ -284,6 +291,10 @@ section {
 
 .btn_icon[data-icon='users'] {
     background-image: url('images/users.svg');
+}
+
+.btn_icon[data-icon='signin'] {
+    background-image: url('images/signin.svg');
 }
 
 .btn_icon[data-icon='casting'] {
@@ -488,6 +499,7 @@ section {
     justify-content: center;
     align-items: stretch;
     letter-spacing: 0.3px;
+    gap: 20px;
 }
 
 #opportunita_wrapper>a {
@@ -756,9 +768,10 @@ footer>p {
         flex-wrap: wrap;
         /* height: 340px; */
         /* row-gap: 30px; */
-        grid-template-columns: 130px 130px;
+        grid-template-columns: 130px 130px 130px;
         grid-auto-flow: row;
         grid-gap: 18px;
+        row-gap: 15px;
     }
 
     #icons .btn_icon {

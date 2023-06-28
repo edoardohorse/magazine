@@ -36,6 +36,7 @@
             <section id="icons">
                 <div class="icons_btn"><a data-icon="plus"  idContent="lnk_create_casting" class="btn_icon"></a><p idContent="btn_lnk_create_casting"></p></div>
                 <div class="icons_btn"><a data-icon="users" idContent="lnk_users" class="btn_icon"></a><p idContent="btn_lnk_users"></p></div>
+                <div class="icons_btn"><a data-icon="signin" idContent="lnk_signup" class="btn_icon"></a><p idContent="btn_signin"></p></div>
                 <div class="icons_btn"><a data-icon="casting"   idContent="lnk_casting" class="btn_icon"></a><p idContent="btn_lnk_casting"></p></div>
                 <div class="icons_btn"><a data-icon="magazine"  idContent="lnk_magazine" class="btn_icon"></a><p idContent="btn_lnk_magazine"></p></div>
             </section>
@@ -120,7 +121,7 @@
                 </div>
                 <a class="btn_lnk btn_lnk--uppercase" idContent="btn_login"></a>
                 <a class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_signin"></a>
-                <a class="lnk" idContent="btn_lnk_guest"></a>
+                <!-- <a class="lnk" idContent="btn_lnk_guest"></a> -->
             </section>
             <section id="casting">
                 <div class="casting_info">
