@@ -30,15 +30,15 @@
                                 idContent="btn_search_artist" idContentAttribute="title"></button>
                         </div>
                     </form>
-                    <a class="btn_lnk" idContent="btn_search_advance"></a>
+                    <a target="_top" class="btn_lnk" idContent="btn_search_advance"></a>
                 </div>
             </section>
             <section id="icons">
-                <div class="icons_btn"><a data-icon="plus"  idContent="lnk_create_casting" class="btn_icon"></a><p idContent="btn_lnk_create_casting"></p></div>
-                <div class="icons_btn"><a data-icon="users" idContent="lnk_users" class="btn_icon"></a><p idContent="btn_lnk_users"></p></div>
-                <div class="icons_btn"><a data-icon="signin" idContent="lnk_signup" class="btn_icon"></a><p idContent="btn_signin"></p></div>
-                <div class="icons_btn"><a data-icon="casting"   idContent="lnk_casting" class="btn_icon"></a><p idContent="btn_lnk_casting"></p></div>
-                <div class="icons_btn"><a data-icon="magazine"  idContent="lnk_magazine" class="btn_icon"></a><p idContent="btn_lnk_magazine"></p></div>
+                <div class="icons_btn"><a target="_top" data-icon="plus"  idContent="lnk_create_casting" class="btn_icon"></a><p idContent="btn_lnk_create_casting"></p></div>
+                <div class="icons_btn"><a target="_top" data-icon="users" idContent="lnk_users" class="btn_icon"></a><p idContent="btn_lnk_users"></p></div>
+                <div class="icons_btn"><a target="_top" data-icon="signin" idContent="lnk_signup" class="btn_icon"></a><p idContent="btn_signin"></p></div>
+                <div class="icons_btn"><a target="_top" data-icon="casting"   idContent="lnk_casting" class="btn_icon"></a><p idContent="btn_lnk_casting"></p></div>
+                <div class="icons_btn"><a target="_top" data-icon="magazine"  idContent="lnk_magazine" class="btn_icon"></a><p idContent="btn_lnk_magazine"></p></div>
             </section>
             <section id="slideshow_wrapper">
                 <h2 idContent="magazine_title"></h2>
@@ -76,7 +76,7 @@
                                 idContent="btn_search_magazine" idContentAttribute="title"></button>
                         </div>
                     </form>
-                    <a class="btn_lnk" idContent="btn_lnk_magazine"></a>
+                    <a target="_top" class="btn_lnk" idContent="btn_lnk_magazine"></a>
                 </div>
             </section>
             <section id="opportunita_wrapper">
@@ -119,16 +119,16 @@
 
                     </section>
                 </div>
-                <a class="btn_lnk btn_lnk--uppercase" idContent="btn_login"></a>
-                <a class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_signin"></a>
-                <!-- <a class="lnk" idContent="btn_lnk_guest"></a> -->
+                <a target="_top" class="btn_lnk btn_lnk--uppercase" idContent="btn_login"></a>
+                <a target="_top" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_signin"></a>
+                <!-- <a target="_top" class="lnk" idContent="btn_lnk_guest"></a> -->
             </section>
             <section id="casting">
                 <div class="casting_info">
                     <h2 idContent="casting_title"></h2>
                     <div class="casting_info_btns">
-                        <a class="btn_lnk btn_lnk--uppercase" idContent="btn_lnk_castlist"></a>
-                         <a class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_lnk_create_casting"></a>
+                        <a target="_top" class="btn_lnk btn_lnk--uppercase" idContent="btn_lnk_castlist"></a>
+                         <a target="_top" class="btn_lnk btn_lnk--secondary btn_lnk--uppercase" idContent="btn_lnk_create_casting"></a>
                     </div>
                 </div>
                 <div id="casting_images" class="casting_images"></div>
@@ -137,7 +137,7 @@
                 
                 <div class="footer_content">
                     <!-- <div class="footer_lnks">/ -->
-                        <a class="lnk" idContent="lnk_privacy_policy">Privacy Policy</a>
+                        <a target="_top" class="lnk" idContent="lnk_privacy_policy">Privacy Policy</a>
                         
                     <!-- </div> -->
                     <div class="footer_logo">
@@ -151,7 +151,7 @@
                             <a idContent="lnk_yt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
-                    <a class="lnk" idContent="lnk_cookie_policy"></a>
+                    <a target="_top" class="lnk" idContent="lnk_cookie_policy"></a>
                 </div>
                 <p idContent="copyright"></p>
             </footer>
