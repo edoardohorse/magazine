@@ -15,6 +15,7 @@
     "lnk_users":"",
     "lnk_casting":"",
     "lnk_magazine":"",
+    "lnk_signup": "https://testi.rbcasting.com/it/home?p_p_id=com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet&p_p_lifecycle=0&p_p_state=maximized",
 
     "btn_login":"",
     "btn_signin":"",
