@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin-right: auto;
     margin-left: auto;
     background-color: var(--light-grey);
@@ -90,6 +90,7 @@ section {
     padding: 0.2em 2ch;
     font-weight: 700;
     white-space: pre;
+    cursor: pointer;
 }
 
 .btn_icon {
@@ -263,6 +264,9 @@ section {
     gap: 0;
     padding: 40px 0;
     /* width: 100vw; */
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #slideshow_wrapper>p {
@@ -774,7 +778,7 @@ footer>p {
         flex-wrap: wrap;
         /* height: 340px; */
         /* row-gap: 30px; */
-        grid-template-columns: 130px 130px 130px;
+        grid-template-columns: 110px 110px 110px;
         grid-auto-flow: row;
         grid-gap: 18px;
         row-gap: 15px;
