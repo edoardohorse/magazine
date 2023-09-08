@@ -132,7 +132,9 @@ function injectNews(news){
     <li class="splide__slide">
         <div class="slideshow_slide">
             <img src="${post.image}">
-            <div class="slideshow_label">${post.title}</div>
+            <div class="slideshow_label">
+              <a href="${post.url}" >${post.title}</a>
+            </div>
         </div>
     </li>`;
   }

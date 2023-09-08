@@ -30,13 +30,16 @@ if ( $arr_posts->have_posts() ){
     $posts = $arr_posts->get_posts();
     // var_dump($posts);
     foreach ($posts as $post){
-        // var_dump($post);
-        $content = apply_filters( 'the_content',$post->post_content);
-        $i = strpos($content, "src")+5;
-        $f = strpos($content, "alt")-2;
-        $imgURL =  substr($content, $i, $f-$i);
-        $title = $post->post_title;
-        array_push($res, ["title"=> $title, "image"=>$imgURL ]);
+      /* echo '<pre>';
+        var_dump($post);
+      echo '</pre>'; */
+      $content = apply_filters( 'the_content',$post->post_content);
+      $i = strpos($content, "src")+5;
+      $f = strpos($content, "alt")-2;
+      $imgURL =  substr($content, $i, $f-$i);
+      $title = $post->post_title;
+      $url = $post->guid;
+      array_push($res, ["title"=> $title, "image"=>$imgURL, "url"=>$url]);
     }
 }
 
