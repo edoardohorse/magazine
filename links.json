@@ -11,11 +11,11 @@
 
 
     "btn_search_advance":"",
-    "lnk_create_casting":"",
+    "lnk_create_casting": "https://www.rbcasting.com/rb/cast-list",
+    "lnk_signup": "https://www.rbcasting.com/manage/-/account/subscription",
     "lnk_users":"",
-    "lnk_casting":"",
-    "lnk_magazine":"",
-    "lnk_signup": "https://testi.rbcasting.com/it/home?p_p_id=com_liferay_dynamic_data_mapping_form_web_portlet_DDMFormPortlet&p_p_lifecycle=0&p_p_state=maximized",
+    "lnk_casting": "https://www.rbcasting.com/it/casting",
+    "lnk_magazine": "https://www.rbcasting.com",
 
     "btn_login":"",
     "btn_signin":"",
@@ -29,5 +29,27 @@
     "lnk_fb":"https://www.facebook.com/rbcasting/",
     "lnk_ig":"https://www.instagram.com/rbcasting/",
     "lnk_tw":"https://twitter.com/rbcasting",
-    "lnk_yt": "https://www.youtube.com/user/RBcasting"
+    "lnk_yt": "https://www.youtube.com/user/RBcasting",
+
+    "lnk_opportunita_actor_profile": "https://www.rbcasting.com/rb/web/valeriasolarino",
+    "lnk_opportunita_actor_casting": "https://static.rbcasting.com/CANDIDATI-AI-CASTING.pdf",
+    "lnk_opportunita_actor_agency": "https://static.rbcasting.com/TROVA-AGENZIA-ATTORI.pdf",
+    "lnk_opportunita_actor_boost": "https://static.rbcasting.com/POTENZIA-PROFILO.pdf",
+    
+    "lnk_opportunita_casting_add":"https://static.rbcasting.com/AGGIUNGI-ANNUNCIO-CASTING-FORM.pdf",
+    "lnk_opportunita_casting_candidacy":"https://static.rbcasting.com/CASTING-DIRECTOR-RICEVI-CANDIDATURE.pdf",
+    "lnk_opportunita_casting_actors":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pdf",
+    "lnk_opportunita_casting_search":"https://rbcasting.com/advanced-search ",
+    "lnk_opportunita_casting_signup":"https://rbcasting.com/registration",
+    
+    "lnk_opportunita_agent_profile":"https://www.rbcasting.com/rb/web/tna",
+    "lnk_opportunita_agent_candidating": "https://static.rbcasting.com/CANDIDA-ATTORE-AL-CASTING.pdf",
+    "lnk_opportunita_agent_affilitation":"https://static.rbcasting.com/AFFILIAZIONE-ATTORI-LATO-AGENZIA.pdf",
+    "lnk_opportunita_agent_update":"https://static.rbcasting.com/AGGIORNA-PROFILO-ATTORI.pdf",
+    "lnk_opportunita_agent_signup": "https://rbcasting.com/registrazione-agenzia ",
+    
+    "lnk_opportunita_addcasting_form":"https://static.rbcasting.com/AGGIUNGI-ANNUNCIO-CASTING-FORM.pdf",
+    "lnk_opportunita_addcasting_getcanditates":"https://static.rbcasting.com/CASTING-DIRECTOR-RICEVI-CANDIDATURE.pdf",
+    "lnk_opportunita_addcasting_contact":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pd",
+    "lnk_opportunita_addcasting_groups":"https://static.rbcasting.com/ORGANIZZA-LISTE-GRUPPI.pdf"   
 }

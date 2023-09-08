@@ -49,7 +49,13 @@ function injectLang(lang) {
     const inject = (el, lang) => {
         const key = el.getAttribute(ATTRIBUTE_ELEMENT_CONTENT);
         const value = lang[key] || null;
-        if (value) {
+        if(Array.isArray(value)){
+          el.innerHTML = ""
+          value.forEach(lnk=>{
+              el.innerHTML += newLinkTertiarty(lnk)
+            })
+        }
+        else if (value) {
             if (el.hasAttribute(ATTRIBUTE_ELEMENT_ATTR)) {
                 el.setAttribute(el.getAttribute(ATTRIBUTE_ELEMENT_ATTR), value);
             } else
@@ -92,6 +98,10 @@ function newHoverableImage(image){
                 <img src="${DOMAIN_RB + image.posterId}">
                 <span>${image.title}</span>
             </a>`;
+}
+
+function newLinkTertiarty(lnk){
+  return `<a class="btn_lnk btn_lnk--tertiary" target="_top" ${ATTRIBUTE_ELEMENT_CONTENT}="${lnk.url}">${lnk.label}</a>`;
 }
 
 function injectCastlist(castlist){
