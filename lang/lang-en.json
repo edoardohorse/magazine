@@ -1,63 +1,139 @@
 {
 
-    "nav_talent" : "Watch out the talent",
-    "nav_events" : "Events",
-    "nav_specials" : "Specials",
-    "nav_articles" : "Articles",
-    "nav_news" : "News",
-    "nav_casting" : "Casting",
-    "nav_castlist" : "Add to Castlist",
-    "nav_actors" : "Search actors",
-    "placeholder_search": "Search",
+  "nav_talent":"Watch out for talent",
+  "nav_events":"Events",
+  "nav_specials":"Specials",
+  "nav_articles":"Articles",
+  "nav_news":"News",
+  "nav_casting":"Casting",
+  "nav_castlist":"Add to Castlist",
+  "nav_actors":"Search actors",
+  "placeholder_search":"Search",
 
-    "flag-it":"Italian",
-    "flag-en":"English",
-    "flag-es":"Spanish",
-    "flag-fr":"French",
+  "flag-it":"Italian",
+  "flag-en":"English",
+  "flag-es":"Spanish",
+  "flag-fr":"French",
+  "flag-de":"German",
 
-    "login_header": "Login",
-    "login_address": "Address Email",
-    "login_password": "Password",
-    "login_rememberme": "Remember me",
-    "login_btn": "Login",
-    "login_lnk_create_account": "Create Account",
-    "login_lnk_forgot_password": "Forgot Password",
-    
-    "search_title": "<b>Find</b> professionals in the field",
-    "placeholder_artist": "Name artist",
-    "btn_search_artist":"Search artist",
-    "btn_search_advance":"Advanced research",
-    "btn_lnk_create_casting":"Create casting",
-    "btn_lnk_users":"Users",
-    "btn_lnk_casting":"Casting",
-    "btn_lnk_magazine":"Magazine",
+  "login_header":"Log in",
+  "login_address":"Email address",
+  "login_password":"Password",
+  "login_rememberme":"remember me",
+  "login_btn":"Log in",
+  "login_lnk_create_account":"Create Account",
+  "login_lnk_forgot_password":"Forgot password",
 
-
-    "magazine_title": "The MAGAZINE",
-    "magazine_subtitle": "Discover <b>magazine</b> e all <b>news</b>,<br> <b>interviews</b> and <b>events</b> of the moment",
-    "placeholder_magazine":"Find in the magazine",
-    "btn_search_magazine": "Find in the magazine",
+  "search_title":"<b>Find</b> the professionals in the sector",
+  "placeholder_artist":"Artist name",
+  "btn_search_artist":"Search for artist",
+  "btn_search_advance":"Advanced Search",
+  "btn_lnk_create_casting":"Add casting",
+  "btn_lnk_users":"Users",
+  "btn_lnk_casting":"Casting",
+  "btn_lnk_magazine":"Magazine",
 
 
-    "opportunita_title":"To whom is addressed the network",
-    "opportunita_subtitle":"<b> Sign up </b> and discover all the funcionalities designed for you",
-    "header_opportunita_attore":"<span>Are you an</span><b>actor?</b>",
-    "header_opportunita_casting_director":"<span>Are you a</span><b>casting director?</b>",
-    "header_opportunita_agente":"<span>Are you an</span><b>agent?</b>",
-    "header_opportunita_audizione":"<span>Insert a</span><b>casting</b>",
-    "section_opportunita_attore":"",
-    "section_opportunita_agente":"",
-    "section_opportunita_casting_director":"",
-    "section_opportunita_audizione":"",
-    "btn_login":"Login",
-    "btn_signin":"Sign up",
-    "btn_lnk_guest":"...login as guest",
+  "magazine_title":"The MAGAZINE",
+  "magazine_subtitle":"Discover the <b>magazine</b> and discover all the <b>news</b>,<br> the <b>interviews</b> and <b>events</b> of the moment",
+  "placeholder_magazine":"Search the magazine",
+  "btn_search_magazine":"Search the magazine",
 
-    "casting_title":"The CASTING",
-    "btn_lnk_castlist":"Browse caslist",
 
-    "lnk_privacy_policy": "Privacy policy",
-    "lnk_cookie_policy": "Cookie policy",
+  "opportunita_title":"Who is the network for",
+  "opportunita_subtitle":"<b>Register</b> and discover all the features designed for you",
 
-    "copyright": "Copyright 2011 © RB Casting. All rights are reseverd"
+  "header_opportunita_attore":"<span>Are you an</span><b>actor?</b>",
+  "section_opportunita_attore":[{
+      "label":"Actor Profile",
+      "url":"lnk_opportunita_actor_profile"
+    },
+    {
+      "label":"Casting candidates",
+      "url":"lnk_opportunita_actor_casting"
+    },
+    {
+      "label":"Find Agency",
+      "url":"lnk_opportunita_actor_agency"
+    },
+    {
+      "label":"Boost profile",
+      "url":"lnk_opportunita_actor_boost"
+    },
+    {
+      "label":"Sign in",
+      "url":"lnk_signup"
+    }
+  ],
+
+  "header_opportunita_agente":"<span>Are you an</span><b>agent?</b>",
+  "section_opportunita_agente":[{
+      "label":"Add Casting",
+      "url":"lnk_opportunita_agent_profile"
+    },
+    {
+      "label":"Receive Applications",
+      "url":"lnk_opportunita_agent_candidating"
+    },
+    {
+      "label":"Contact Actors",
+      "url":"lnk_opportunita_agent_affilitation"
+    },
+    {
+      "label":"Actors search engine",
+      "url":"lnk_opportunita_agent_update"
+    },
+    {
+      "label":"Sign in",
+      "url":"lnk_opportunita_agent_signup"
+    }
+  ],
+
+  "header_opportunita_casting_director":"<span>Are you a</span><b>casting director?</b>",
+  "section_opportunita_casting_director":[{
+    "label":"Add Casting",
+    "url":"lnk_opportunita_casting_add"
+  }, {
+    "label":"Receive Applications",
+    "url":"lnk_opportunita_casting_candidacy"
+  }, {
+    "label":"Contact Actors",
+    "url":"lnk_opportunita_casting_actors"
+  }, {
+    "label":"Actors search engine",
+    "url":"lnk_opportunita_casting_search"
+  }, {
+    "label":"Sign in",
+    "url":"lnk_opportunita_casting_signup"
+  }],
+
+  "header_opportunita_audizione":"<span>Add</span><b>audition</b>",
+  "section_opportunita_audizione":[{
+    "label":"Form Casting",
+    "url":"lnk_opportunita_addcasting_form"
+  }, {
+    "label":"Receive Applications",
+    "url":"lnk_opportunita_addcasting_getcanditates"
+  }, {
+    "label":"Contact Actors",
+    "url":"lnk_opportunita_addcasting_contact"
+  }, {
+    "label":"Organize Folders/Groups",
+    "url":"lnk_opportunita_addcasting_groups"
+  }, {
+    "label":"Add Casting",
+    "url":"lnk_create_casting"
+  }],
+
+
+
+  "btn_login":"Log in",
+  "btn_signin":"Sign in",
+  "btn_lnk_guest":"enter as a guest",
+  "casting_title":"THE CASTING",
+  "btn_lnk_castlist":"Browse caslist",
+  "lnk_privacy_policy":"Privacy policy",
+  "lnk_cookie_policy":"Cookie policy",
+  "copyright":"Copyright 2011 © RB Casting. All rights are reserved"
+
 }

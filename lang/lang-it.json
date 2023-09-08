@@ -1,65 +1,145 @@
 {
 
-    "nav_talent" : "Occhio al talento",
-    "nav_events" : "Eventi",
-    "nav_specials" : "Speciali",
-    "nav_articles" : "Articoli",
-    "nav_news" : "News",
-    "nav_casting" : "Casting",
-    "nav_castlist" : "Aggiungi Castlist",
-    "nav_actors" : "Cerca attori",
-    "placeholder_search": "Ricerca",
+    "nav_talent" :"Occhio al talento",
+    "nav_events" :"Eventi",
+    "nav_specials" :"Speciali",
+    "nav_articles" :"Articoli",
+    "nav_news" :"News",
+    "nav_casting" :"Casting",
+    "nav_castlist" :"Aggiungi Castlist",
+    "nav_actors" :"Cerca attori",
+    "placeholder_search":"Ricerca",
 
     "flag-it":"Italiano",
     "flag-en":"Inglese",
     "flag-es":"Spagnolo",
     "flag-fr":"Francese",
+    "flag-de":"Germania",
 
     "login_header":"Accedi",
     "login_address":"Indirizzo Email",
     "login_password":"Password",
-    "login_rememberme": "Ricordami",
-    "login_btn": "Accedi",
-    "login_lnk_create_account": "Crea Account",
-    "login_lnk_forgot_password": "Password Dimenticata",
+    "login_rememberme":"Ricordami",
+    "login_btn":"Accedi",
+    "login_lnk_create_account":"Crea Account",
+    "login_lnk_forgot_password":"Password Dimenticata",
     
-    "search_title": "<b>Trova</b> i professionisti del settore",
-    "placeholder_artist": "Nome artista",
+    "search_title":"<b>Trova</b> i professionisti del settore",
+    "placeholder_artist":"Nome artista",
     "btn_search_artist":"Cerca artista",
     "btn_search_advance":"Ricerca Avanzata",
-    "btn_lnk_create_casting":"Crea casting",
+    "btn_lnk_create_casting":"Aggiungi casting",
     "btn_lnk_users":"Utenti",
     "btn_lnk_casting":"Casting",
     "btn_lnk_magazine":"Magazine",
 
 
-    "magazine_title": "Il MAGAZINE",
-    "magazine_subtitle": "Scopri il <b>magazine</b> e scopri tutte le <b>news</b>,<br> le <b>interviste</b> e gli <b>eventi</b> del momento",
+    "magazine_title":"Il MAGAZINE",
+    "magazine_subtitle":"Scopri il <b>magazine</b> e scopri tutte le <b>news</b>,<br> le <b>interviste</b> e gli <b>eventi</b> del momento",
     "placeholder_magazine":"Cerca nel magazine",
-    "btn_search_magazine": "Cerca nel magazine",
+    "btn_search_magazine":"Cerca nel magazine",
 
 
     "opportunita_title":"A chi è rivolto il network",
     "opportunita_subtitle":"<b> Registrati </b> e scopri tutte le funzionalità pensate per te",
+    
     "header_opportunita_attore":"<span>Sei un</span><b>attore?</b>",
-    "header_opportunita_casting_director":"<span>Sei un</span><b>casting director?</b>",
+    "section_opportunita_attore":[
+      {
+        "label":"Profilo Attore",
+        "url":"lnk_opportunita_actor_profile"
+      },
+      {
+        "label":"Candidati ai Casting",
+        "url":"lnk_opportunita_actor_casting"
+      },
+      {
+        "label":"Trova Agenzia",
+        "url":"lnk_opportunita_actor_agency"
+      },
+      {
+        "label":"Potenzia profilo",
+        "url":"lnk_opportunita_actor_boost"
+      },
+      {
+        "label":"Registrati",
+        "url":"lnk_signup"
+      }
+    ],
+    
     "header_opportunita_agente":"<span>Sei un</span><b>agente?</b>",
+    "section_opportunita_agente":[
+      {
+        "label":"Aggiungi Casting",
+        "url":"lnk_opportunita_agent_profile"
+      },
+      {
+        "label":"Ricevi Candidature",
+        "url":"lnk_opportunita_agent_candidating"
+      },
+      {
+        "label":"Contatta Attori",
+        "url":"lnk_opportunita_agent_affilitation"
+      },
+      {
+        "label":"Motore ricerca Attori",
+        "url":"lnk_opportunita_agent_update"
+      },
+      {
+        "label":"Registrati",
+        "url":"lnk_opportunita_agent_signup"
+      }
+    ],
+        
+    "header_opportunita_casting_director":"<span>Sei un</span><b>casting director?</b>",
+    "section_opportunita_casting_director":[
+      {
+        "label":"Aggiungi Casting",
+        "url":"lnk_opportunita_casting_add"
+      }, {
+        "label":"Ricevi Candidature",
+        "url":"lnk_opportunita_casting_candidacy"
+      }, {
+        "label":"Contatta Attori",
+        "url":"lnk_opportunita_casting_actors"
+      }, {
+        "label":"Motore ricerca Attori",
+        "url":"lnk_opportunita_casting_search"
+      }, {
+        "label":"Registrati",
+        "url":"lnk_opportunita_casting_signup"
+      }
+    ],
+        
     "header_opportunita_audizione":"<span>Aggiungi</span><b>audizione</b>",
-    "section_opportunita_attore": "<a href='' class='btn_lnk btn_lnk--tertiary'>Esempio di profilo</><br><a class='btn_lnk btn_lnk--tertiary' href='https://testi.rbcasting.com/casting'>Candidati ai casting</><br>",
-    "section_opportunita_agente": "",
-    "section_opportunita_casting_director": "",
-    "section_opportunita_audizione": "",
+    "section_opportunita_audizione":[
+      {
+      "label":"Form Casting",
+      "url":"lnk_opportunita_addcasting_form"
+      }, {
+        "label":"Ricevi Candidature",
+        "url":"lnk_opportunita_addcasting_getcanditates"
+      }, {
+        "label":"Contatta Attori",
+        "url":"lnk_opportunita_addcasting_contact"
+      }, {
+        "label":"Organizza Cartelle / Gruppi",
+        "url":"lnk_opportunita_addcasting_groups"
+      }, {
+      "label":"Aggiungi Casting",
+      "url":"lnk_create_casting"
+    }]
+    ,
+
+
+
     "btn_login":"Accedi",
     "btn_signin":"Registrati",
     "btn_lnk_guest":"...entra come ospite",
-
     "casting_title":"IL CASTING",
     "btn_lnk_castlist":"Sfoglia caslist",
-
-
-    "lnk_privacy_policy": "Privacy policy",
-    "lnk_cookie_policy": "Cookie policy",
-
-    "copyright": "Copyright 2011 © RB Casting. Tutti i diritti sono riservati"
+    "lnk_privacy_policy":"Privacy policy",
+    "lnk_cookie_policy":"Cookie policy",
+    "copyright":"Copyright 2011 © RB Casting. Tutti i diritti sono riservati"
 
 }

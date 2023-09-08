@@ -1,0 +1,140 @@
+{
+
+  "nav_talent":"Achten Sie auf Talente",
+  "nav_events":"Veranstaltungen",
+  "nav_specials":"Sonderangebote",
+  "nav_articles":"Artikel",
+  "nav_news":"Nachricht",
+  "nav_casting":"Casting",
+  "nav_castlist":"Besetzungsliste hinzufügen",
+  "nav_actors":"Suche nach Schauspielern",
+  "placeholder_search":"Forschung",
+
+  "flag-it":"Italienisch",
+  "flag-en":"Englisch",
+  "flag-es":"Spanisch",
+  "flag-fr":"Französisch",
+  "flag-de":"Deutschland",
+
+  "login_header":"Anmeldung",
+  "login_address":"E-Mail-Adresse",
+  "login_password":"Passwort",
+  "login_rememberme":"Edich an mich",
+  "login_btn":"Anmeldung",
+  "login_lnk_create_account":"Benutzerkonto erstellen",
+  "login_lnk_forgot_password":"Passwort vergessen",
+
+  "search_title":"<b>Finden</b> die Fachleute der Branche",
+  "placeholder_artist":"Künstlername",
+  "btn_search_artist":"Suche nach Künstler",
+  "btn_search_advance":"Erweiterte Suche",
+  "btn_lnk_create_casting":"Gießen hinzufügen",
+  "btn_lnk_users":"Benutzer",
+  "btn_lnk_casting":"Casting",
+  "btn_lnk_magazine":"Zeitschrift",
+
+
+  "magazine_title":"Die Zeitschrift",
+  "magazine_subtitle":"Schauen Sie sich das <b>Magazin</b> an und entdecken Sie alle aktuellen <b>Neuigkeiten</b>,<br> <b>Interviews</b> und <b>Events</b>",
+  "placeholder_magazine":"Durchsuchen Sie das Magazin",
+  "btn_search_magazine":"Durchsuchen Sie das Magazin",
+
+
+  "opportunita_title":"Für wen ist das Netzwerk,",
+  "opportunita_subtitle":"<b>Registrieren Sie sich</b> und entdecken Sie alle für Sie konzipierten Funktionen,",
+  "opportunita_subtitle":"<b>Registrieren Sie sich</b> und entdecken Sie alle für Sie konzipierten Funktionen,",
+
+  "header_opportunita_attore":"<span>Sind Sie</span><b>Schauspieler?</b>",
+  "section_opportunita_attore":[{
+      "label":"Schauspielerprofil",
+      "url":"lnk_opportunita_actor_profile"
+    },
+    {
+      "label":"Casting-Kandidaten",
+      "url":"lnk_opportunita_actor_casting"
+    },
+    {
+      "label":"Agentur finden",
+      "url":"lnk_opportunita_actor_agency"
+    },
+    {
+      "label":"Boost-Profil",
+      "url":"lnk_opportunita_actor_boost"
+    },
+    {
+      "label":"Anmelden",
+      "url":"lnk_signup"
+    }
+  ],
+
+  "header_opportunita_agente":"<span>Sind Sie</span><b>Agent?</b>",
+  "section_opportunita_agente":[{
+      "label":"Casting hinzufügen",
+      "url":"lnk_opportunita_agent_profile"
+    },
+    {
+      "label":"Bewerbungen erhalten",
+      "url":"lnk_opportunita_agent_candidating"
+    },
+    {
+      "label":"Kontaktieren Sie Schauspieler",
+      "url":"lnk_opportunita_agent_affilitation"
+    },
+    {
+      "label":"Suchmaschine für Schauspieler",
+      "url":"lnk_opportunita_agent_update"
+    },
+    {
+      "label":"Anmelden",
+      "url":"lnk_opportunita_agent_signup"
+    }
+  ],
+
+  "header_opportunita_casting_director":"<span>Sind Sie</span><b>Casting-Direktor?</b>",
+  "section_opportunita_casting_director":[{
+    "label":"Casting hinzufügen",
+    "url":"lnk_opportunita_casting_add"
+  }, {
+    "label":"Bewerbungen erhalten",
+    "url":"lnk_opportunita_casting_candidacy"
+  }, {
+    "label":"Kontaktieren Sie Schauspieler",
+    "url":"lnk_opportunita_casting_actors"
+  }, {
+    "label":"Suchmaschine für Schauspieler",
+    "url":"lnk_opportunita_casting_search"
+  }, {
+    "label":"Anmelden",
+    "url":"lnk_opportunita_casting_signup"
+  }],
+
+  "header_opportunita_audizione":"<span>Hinzufügen</span><b>Vorsprechen</b>",
+  "section_opportunita_audizione":[{
+    "label":"Formguss",
+    "url":"lnk_opportunita_addcasting_form"
+  }, {
+    "label":"Bewerbungen erhalten",
+    "url":"lnk_opportunita_addcasting_getcanditates"
+  }, {
+    "label":"Kontaktieren Sie Schauspieler",
+    "url":"lnk_opportunita_addcasting_contact"
+  }, {
+    "label":"Ordner/Gruppen organisieren",
+    "url":"lnk_opportunita_addcasting_groups"
+  }, {
+    "label":"Casting hinzufügen",
+    "url":"lnk_create_casting"
+  }],
+
+
+
+  "btn_login":"Anmeldung",
+  "btn_signin":"Anmelden",
+  "btn_lnk_guest":"Als Gast eintreten",
+  "casting_title":"DAS CASTING",
+  "btn_lnk_castlist":"Durchsuchen Sie die Caslist",
+  "lnk_privacy_policy":"Datenschutzrichtlinie",
+  "lnk_cookie_policy":"Cookie-Richtlinie",
+  "copyright":"Copyright 2011 © RB Casting. Alle Rechte vorbehalten"
+
+}
