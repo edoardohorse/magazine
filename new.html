@@ -247,7 +247,7 @@ function initMagazine(){
         document.body.appendChild(closebtn)
     }
 
-    document.querySelector("a[href='/#home']").onclick = openMagazine
+    document.querySelector("a[href*='/#home']").onclick = openMagazine
     iframeMagazine.onload = openMagazine
     // openMagazine()
 }
