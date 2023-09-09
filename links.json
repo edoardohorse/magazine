@@ -14,7 +14,7 @@
     "lnk_create_casting": "https://www.rbcasting.com/rb/cast-list",
     "lnk_signup": "https://testi.rbcasting.com/iscrizione-interna",
     "lnk_users":"",
-    "lnk_casting": "https://www.rbcasting.com/it/casting",
+    "lnk_casting": "https://www.rbcasting.com/casting/",
     "lnk_magazine": "https://www.rbcasting.com",
 
     "btn_login":"",
@@ -50,6 +50,6 @@
     
     "lnk_opportunita_addcasting_form":"https://static.rbcasting.com/AGGIUNGI-ANNUNCIO-CASTING-FORM.pdf",
     "lnk_opportunita_addcasting_getcanditates":"https://static.rbcasting.com/CASTING-DIRECTOR-RICEVI-CANDIDATURE.pdf",
-    "lnk_opportunita_addcasting_contact":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pd",
+    "lnk_opportunita_addcasting_contact":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pdf",
     "lnk_opportunita_addcasting_groups":"https://static.rbcasting.com/ORGANIZZA-LISTE-GRUPPI.pdf"   
 }
