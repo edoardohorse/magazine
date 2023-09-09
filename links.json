@@ -14,7 +14,7 @@
     "lnk_create_casting": "https://www.rbcasting.com/rb/cast-list",
     "lnk_signup": "https://testi.rbcasting.com/iscrizione-interna",
     "lnk_users":"",
-    "lnk_casting": "https://www.rbcasting.com/it/casting",
+    "lnk_casting": "https://www.rbcasting.com/casting/",
     "lnk_magazine": "https://www.rbcasting.com",
 
     "btn_login":"",
@@ -39,17 +39,17 @@
     "lnk_opportunita_casting_add":"https://static.rbcasting.com/AGGIUNGI-ANNUNCIO-CASTING-FORM.pdf",
     "lnk_opportunita_casting_candidacy":"https://static.rbcasting.com/CASTING-DIRECTOR-RICEVI-CANDIDATURE.pdf",
     "lnk_opportunita_casting_actors":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pdf",
-    "lnk_opportunita_casting_search":"https://rbcasting.com/advanced-search ",
-    "lnk_opportunita_casting_signup":"https://rbcasting.com/registration",
+    "lnk_opportunita_casting_search": "https://rbcasting.com/rb/ricerca-avanzata",
+    "lnk_opportunita_casting_signup": "https://rbcasting.com/rb/casting-directors-info-iscrizione",
     
     "lnk_opportunita_agent_profile":"https://www.rbcasting.com/rb/web/tna",
     "lnk_opportunita_agent_candidating": "https://static.rbcasting.com/CANDIDA-ATTORE-AL-CASTING.pdf",
     "lnk_opportunita_agent_affilitation":"https://static.rbcasting.com/AFFILIAZIONE-ATTORI-LATO-AGENZIA.pdf",
     "lnk_opportunita_agent_update":"https://static.rbcasting.com/AGGIORNA-PROFILO-ATTORI.pdf",
-    "lnk_opportunita_agent_signup": "https://rbcasting.com/registrazione-agenzia ",
+    "lnk_opportunita_agent_signup": "https://rbcasting.com/rb/agenzie-info-iscrizione",
     
     "lnk_opportunita_addcasting_form":"https://static.rbcasting.com/AGGIUNGI-ANNUNCIO-CASTING-FORM.pdf",
     "lnk_opportunita_addcasting_getcanditates":"https://static.rbcasting.com/CASTING-DIRECTOR-RICEVI-CANDIDATURE.pdf",
-    "lnk_opportunita_addcasting_contact":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pd",
+    "lnk_opportunita_addcasting_contact":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pdf",
     "lnk_opportunita_addcasting_groups":"https://static.rbcasting.com/ORGANIZZA-LISTE-GRUPPI.pdf"   
 }
