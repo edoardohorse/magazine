@@ -38,7 +38,7 @@
                 <div class="icons_btn"><a target="_top" data-icon="users" idContent="lnk_users" class="btn_icon"></a><p idContent="btn_lnk_users"></p></div>
                 <div class="icons_btn"><a target="_top" data-icon="signin" idContent="lnk_signup" class="btn_icon"></a><p idContent="btn_signin"></p></div>
                 <div class="icons_btn"><a target="_top" data-icon="casting"   idContent="lnk_casting" class="btn_icon"></a><p idContent="btn_lnk_casting"></p></div>
-                <div class="icons_btn"><a target="_top" data-icon="magazine"  idContent="lnk_magazine" class="btn_icon"></a><p idContent="btn_lnk_magazine"></p></div>
+                <div class="icons_btn"><a target="_top" data-icon="magazine"  onclick="window.parent.closeMagazine()" class="btn_icon"></a><p idContent="btn_lnk_magazine"></p></div>
             </section>
             <section id="slideshow_wrapper">
                 <h2 idContent="magazine_title"></h2>
