@@ -19,7 +19,7 @@
 
                 <h3 idContent="search_title"></h3>
                 <div class="search_input_wrapper">
-                    <form action="https://testi.rbcasting.com/search" method="GET">
+                    <form action="https://testi.rbcasting.com/search" method="GET" target="_top">
                         <div class="search_input">
                             <!-- TODO action https://testi.rbcasting.com/search?q=pippo -->
                             <!-- TODO https://rbcasting.com/rb/search?q=pippo -->
@@ -66,10 +66,10 @@
                 </div>
                 </div>
                 <div class="search_input_wrapper">
-                    <form action="">
+                    <form action="https://testi.rbcasting.com/search" method="GET" target="_top">
                         <div class="search_input">
                             <!-- TODO search magazine -->
-                            <input type="search" class="searchbox" name="search_magazine"
+                            <input type="search" class="searchbox" name="q"
                                 idContent="placeholder_magazine" idContentAttribute="placeholder">
                             <div class="box"></div>
                             <button class="search_input_btn btn_icon"
