@@ -266,15 +266,17 @@ function openMagazine(){
     iframeMagazine.classList.add(CLASS_MAGAZINE)
     document.body.querySelector("#"+ID_BTN_MAGAZINE).classList.add(CLASS_BTN_MAGAZINE)
     document.body.style.overflow = 'hidden'
-}
-function closeMagazine(){
+    location.hash="#home"
+  }
+  function closeMagazine(){
     const documentIframe = iframeMagazine.contentWindow.document
-
+    
     documentIframe.querySelector("#navbarMenu").classList.remove("isModal")
     iframeMagazine.classList.remove(CLASS_MAGAZINE)
     document.body.querySelector("#"+ID_BTN_MAGAZINE).classList.remove(CLASS_BTN_MAGAZINE)
     document.body.style.overflow = 'unset'
     document.getElementById("myModal").style.display = 'none'
+    location.hash=""
 }
 
 
