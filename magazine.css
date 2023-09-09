@@ -25,7 +25,7 @@ form {
 
 body > main {
     margin-top: 80px;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
