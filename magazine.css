@@ -251,7 +251,7 @@ section {
     font-weight: 700;
     margin-bottom: 0;
     margin-top: 17px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .btn_icon,
