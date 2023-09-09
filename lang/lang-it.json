@@ -66,23 +66,41 @@
         "url":"lnk_signup"
       }
     ],
+
+    "header_opportunita_casting_director": "<span>Sei un</span><b>casting director?</b>",
+    "section_opportunita_casting_director": [{
+      "label": "Aggiungi Casting",
+      "url": "lnk_opportunita_casting_add"
+    }, {
+      "label": "Ricevi Candidature",
+      "url": "lnk_opportunita_casting_candidacy"
+    }, {
+      "label": "Contatta Attori",
+      "url": "lnk_opportunita_casting_actors"
+    }, {
+      "label": "Motore ricerca Attori",
+      "url": "lnk_opportunita_casting_search"
+    }, {
+      "label": "Registrati",
+      "url": "lnk_opportunita_casting_signup"
+    }],
     
     "header_opportunita_agente":"<span>Sei un</span><b>agente?</b>",
     "section_opportunita_agente":[
       {
-        "label":"Aggiungi Casting",
+        "label":"Profilo Agenzia",
         "url":"lnk_opportunita_agent_profile"
       },
       {
-        "label":"Ricevi Candidature",
+        "label":"Candida Attori ai Casting",
         "url":"lnk_opportunita_agent_candidating"
       },
       {
-        "label":"Contatta Attori",
+        "label":"Affiliazioni Attori",
         "url":"lnk_opportunita_agent_affilitation"
       },
       {
-        "label":"Motore ricerca Attori",
+        "label":"Aggiorna Profilo Attori",
         "url":"lnk_opportunita_agent_update"
       },
       {
@@ -91,25 +109,7 @@
       }
     ],
         
-    "header_opportunita_casting_director":"<span>Sei un</span><b>casting director?</b>",
-    "section_opportunita_casting_director":[
-      {
-        "label":"Aggiungi Casting",
-        "url":"lnk_opportunita_casting_add"
-      }, {
-        "label":"Ricevi Candidature",
-        "url":"lnk_opportunita_casting_candidacy"
-      }, {
-        "label":"Contatta Attori",
-        "url":"lnk_opportunita_casting_actors"
-      }, {
-        "label":"Motore ricerca Attori",
-        "url":"lnk_opportunita_casting_search"
-      }, {
-        "label":"Registrati",
-        "url":"lnk_opportunita_casting_signup"
-      }
-    ],
+
         
     "header_opportunita_audizione":"<span>Aggiungi</span><b>audizione</b>",
     "section_opportunita_audizione":[

@@ -44,7 +44,8 @@
   "opportunita_subtitle":"<b>Register</b> and discover all the features designed for you",
 
   "header_opportunita_attore":"<span>Are you an</span><b>actor?</b>",
-  "section_opportunita_attore":[{
+  "section_opportunita_attore":[
+    {
       "label":"Actor Profile",
       "url":"lnk_opportunita_actor_profile"
     },
@@ -66,21 +67,40 @@
     }
   ],
 
+    "header_opportunita_casting_director": "<span>Are you a</span><b>casting director?</b>",
+    "section_opportunita_casting_director": [{
+      "label": "Add Casting",
+      "url": "lnk_opportunita_casting_add"
+    }, {
+      "label": "Receive Applications",
+      "url": "lnk_opportunita_casting_candidacy"
+    }, {
+      "label": "Contact Actors",
+      "url": "lnk_opportunita_casting_actors"
+    }, {
+      "label": "Actors search engine",
+      "url": "lnk_opportunita_casting_search"
+    }, {
+      "label": "Sign in",
+      "url": "lnk_opportunita_casting_signup"
+    }],
+
   "header_opportunita_agente":"<span>Are you an</span><b>agent?</b>",
-  "section_opportunita_agente":[{
-      "label":"Add Casting",
+  "section_opportunita_agente":[
+    {
+      "label":"Agency Profile",
       "url":"lnk_opportunita_agent_profile"
     },
     {
-      "label":"Receive Applications",
+      "label":"Candidate Actors for Castings",
       "url":"lnk_opportunita_agent_candidating"
     },
     {
-      "label":"Contact Actors",
+      "label":"Actor Affiliations",
       "url":"lnk_opportunita_agent_affilitation"
     },
     {
-      "label":"Actors search engine",
+      "label":"Update Actors Profile",
       "url":"lnk_opportunita_agent_update"
     },
     {
@@ -89,23 +109,6 @@
     }
   ],
 
-  "header_opportunita_casting_director":"<span>Are you a</span><b>casting director?</b>",
-  "section_opportunita_casting_director":[{
-    "label":"Add Casting",
-    "url":"lnk_opportunita_casting_add"
-  }, {
-    "label":"Receive Applications",
-    "url":"lnk_opportunita_casting_candidacy"
-  }, {
-    "label":"Contact Actors",
-    "url":"lnk_opportunita_casting_actors"
-  }, {
-    "label":"Actors search engine",
-    "url":"lnk_opportunita_casting_search"
-  }, {
-    "label":"Sign in",
-    "url":"lnk_opportunita_casting_signup"
-  }],
 
   "header_opportunita_audizione":"<span>Add</span><b>audition</b>",
   "section_opportunita_audizione":[{

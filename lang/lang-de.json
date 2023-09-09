@@ -67,6 +67,24 @@
     }
   ],
 
+    "header_opportunita_casting_director": "<span>Sind Sie</span><b>Casting-Direktor?</b>",
+    "section_opportunita_casting_director": [{
+      "label": "Agenturprofil",
+      "url": "lnk_opportunita_casting_add"
+    }, {
+      "label": "Kandidaten für Castings",
+      "url": "lnk_opportunita_casting_candidacy"
+    }, {
+      "label": "Schauspielerzugehörigkeiten",
+      "url": "lnk_opportunita_casting_actors"
+    }, {
+      "label": "Akteurprofil aktualisieren",
+      "url": "lnk_opportunita_casting_search"
+    }, {
+      "label": "anmelden",
+      "url": "lnk_opportunita_casting_signup"
+    }],
+
   "header_opportunita_agente":"<span>Sind Sie</span><b>Agent?</b>",
   "section_opportunita_agente":[{
       "label":"Casting hinzufügen",
@@ -90,23 +108,7 @@
     }
   ],
 
-  "header_opportunita_casting_director":"<span>Sind Sie</span><b>Casting-Direktor?</b>",
-  "section_opportunita_casting_director":[{
-    "label":"Casting hinzufügen",
-    "url":"lnk_opportunita_casting_add"
-  }, {
-    "label":"Bewerbungen erhalten",
-    "url":"lnk_opportunita_casting_candidacy"
-  }, {
-    "label":"Kontaktieren Sie Schauspieler",
-    "url":"lnk_opportunita_casting_actors"
-  }, {
-    "label":"Suchmaschine für Schauspieler",
-    "url":"lnk_opportunita_casting_search"
-  }, {
-    "label":"Anmelden",
-    "url":"lnk_opportunita_casting_signup"
-  }],
+
 
   "header_opportunita_audizione":"<span>Hinzufügen</span><b>Vorsprechen</b>",
   "section_opportunita_audizione":[{

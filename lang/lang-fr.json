@@ -66,6 +66,25 @@
     }
   ],
 
+
+    "header_opportunita_casting_director": "<span>Êtes-vous</span><b>directeur de casting ?</b>",
+    "section_opportunita_casting_director": [{
+      "label": "Profil de l'agence",
+      "url": "lnk_opportunita_casting_add"
+    }, {
+      "label": "Acteurs candidats aux castings",
+      "url": "lnk_opportunita_casting_candidacy"
+    }, {
+      "label": "Affiliations des acteurs",
+      "url": "lnk_opportunita_casting_actors"
+    }, {
+      "label": "Mettre à jour le profil des acteurs",
+      "url": "lnk_opportunita_casting_search"
+    }, {
+      "label": "Se connecter",
+      "url": "lnk_opportunita_casting_signup"
+    }],
+
   "header_opportunita_agente":"<span>Êtes-vous un</span><b>agent ?</b>",
   "section_opportunita_agente":[{
       "label":"Ajouter une diffusion",
@@ -89,23 +108,7 @@
     }
   ],
 
-  "header_opportunita_casting_director":"<span>Êtes-vous</span><b>directeur de casting ?</b>",
-  "section_opportunita_casting_director":[{
-    "label":"Ajouter une diffusion",
-    "url":"lnk_opportunita_casting_add"
-  }, {
-    "label":"Recevoir les candidatures",
-    "url":"lnk_opportunita_casting_candidacy"
-  }, {
-    "label":"Contacter les Acteurs",
-    "url":"lnk_opportunita_casting_actors"
-  }, {
-    "label":"Moteur de recherche d'acteurs",
-    "url":"lnk_opportunita_casting_search"
-  }, {
-    "label":"Se connecter",
-    "url":"lnk_opportunita_casting_signup"
-  }],
+
 
   "header_opportunita_audizione":"<span>Ajouter</span><b>une audition</b>",
   "section_opportunita_audizione":[{
