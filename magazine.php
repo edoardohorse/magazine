@@ -142,7 +142,7 @@
                     <!-- </div> -->
                     <div class="footer_logo">
 
-                        <img width="124" height="56" src="https://rbcasting.com/o/profile-theme/images/company_logo.gif"
+                        <img width="124" height="56" src="https://www.rbcasting.com/rb/o/profile-theme/images/company_logo.gif"
                         alt="./magazine/img/logo.png">
                         <div class="footer_social">
                             <a idContent="lnk_fb" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
