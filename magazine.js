@@ -6,7 +6,7 @@ const CLASS_CASTING_PRIMARY = "casting_images--primary"
 const CLASS_CASTING_SECONDARY = "casting_images--secondary"
 const CLASS_CASTING_TERTIARY = "casting_images--tertiary"
 
-const N_CASTLIST = 6
+const N_CASTLIST = 9
 const N_NEWS = 6
 let castlist, magazine, news = null
 
