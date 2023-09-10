@@ -1,4 +1,4 @@
-const DOMAIN_RB = "https://testi.rbcasting.com";
+const DOMAIN_RB = "https://rbcasting.com/rb";
 const URL_CASTLIST = (start, end)=>{ return `/api/jsonws/rb.castlist/get-public-group-cast-lists/start/${start}/end/${end}`}
 const URL_NEWS = (x)=>{return `./getNews.php?nPosts=${x}`}
 // const URL_LINKS = `./links.json`;

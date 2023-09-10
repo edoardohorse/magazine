@@ -19,9 +19,9 @@
 
                 <h3 idContent="search_title"></h3>
                 <div class="search_input_wrapper">
-                    <form action="https://testi.rbcasting.com/search" method="GET" target="_top">
+                    <form action="https://rbcasting.com/rb/search" method="GET" target="_top">
                         <div class="search_input">
-                            <!-- TODO action https://testi.rbcasting.com/search?q=pippo -->
+                            <!-- TODO action https://rbcasting.com/search?q=pippo -->
                             <!-- TODO https://rbcasting.com/rb/search?q=pippo -->
                             <input type="search" class="searchbox" name="q"
                                 idContent="placeholder_artist" idContentAttribute="placeholder">
@@ -66,7 +66,7 @@
                 </div>
                 </div>
                 <div class="search_input_wrapper">
-                    <form action="https://testi.rbcasting.com/search" method="GET" target="_top">
+                    <form action="https://rbcasting.com/rb/search" method="GET" target="_top">
                         <div class="search_input">
                             <!-- TODO search magazine -->
                             <input type="search" class="searchbox" name="q"
@@ -142,11 +142,10 @@
                     <!-- </div> -->
                     <div class="footer_logo">
 
-                        <img width="124" height="56" src="https://testi.rbcasting.com/o/profile-theme/images/company_logo.gif"
+                        <img width="124" height="56" src="https://rbcasting.com/o/profile-theme/images/company_logo.gif"
                         alt="./magazine/img/logo.png">
                         <div class="footer_social">
                             <a idContent="lnk_fb" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                            <a idContent="lnk_ig" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                             <a idContent="lnk_ig" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                             <a idContent="lnk_tw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                             <a idContent="lnk_yt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
