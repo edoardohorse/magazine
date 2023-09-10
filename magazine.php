@@ -76,7 +76,7 @@
                                 idContent="btn_search_magazine" idContentAttribute="title"></button>
                         </div>
                     </form>
-                    <a target="_top" class="btn_lnk" idContent="btn_lnk_magazine"></a>
+                    <a  class="btn_lnk" idContent="btn_lnk_magazine" onclick="window.parent.closeMagazine()"></a>
                 </div>
             </section>
             <section id="opportunita_wrapper">
