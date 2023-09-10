@@ -20,11 +20,11 @@
     "btn_login":"https://www.rbcasting.com/rb/casting?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false",
     "btn_signin": "https://www.rbcasting.com/rb/iscrizione",
 
-    "btn_lnk_castlist":"",
-    "btn_lnk_create_casting":"",
+    "btn_lnk_castlist": "https://www.rbcasting.com/rb/casting",
+    "btn_lnk_create_casting": "https://www.rbcasting.com/rb/cast-list",
 
     "lnk_privacy_policy": "https://www.rbcasting.com/chisiamo/note-legali-disclaimer/",
-    "lnk_cookie_policy": "https://www.rbcasting.com/web-cookie-policy",
+    "lnk_cookie_policy": "https://www.rbcasting.com/web-privacy-e-cookies/",
 
     "lnk_fb":"https://www.facebook.com/rbcasting/",
     "lnk_ig":"https://www.instagram.com/rbcasting/",
