@@ -4,7 +4,7 @@
         <script src="splide.min.js"></script>
         <link href="splide.min.css" rel="stylesheet">
         <link rel="stylesheet" href="magazine.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> -->
@@ -147,6 +147,7 @@
                         <div class="footer_social">
                             <a idContent="lnk_fb" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
                             <a idContent="lnk_ig" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a idContent="lnk_ig" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                             <a idContent="lnk_tw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                             <a idContent="lnk_yt" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         </div>
