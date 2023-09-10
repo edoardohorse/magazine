@@ -66,10 +66,10 @@
                 </div>
                 </div>
                 <div class="search_input_wrapper">
-                    <form action="https://rbcasting.com/rb/search" method="GET" target="_top">
+                    <form action="https://www.rbcasting.com/" method="GET" target="_top">
                         <div class="search_input">
                             <!-- TODO search magazine -->
-                            <input type="search" class="searchbox" name="q"
+                            <input type="search" class="searchbox" name="s"
                                 idContent="placeholder_magazine" idContentAttribute="placeholder">
                             <div class="box"></div>
                             <button class="search_input_btn btn_icon"
