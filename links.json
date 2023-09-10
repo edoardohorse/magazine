@@ -5,9 +5,9 @@
     "nav_articles": "https://www.rbcasting.com/altri-articoli/",
     "nav_news": "https://www.rbcasting.com/flash-news/",
 
-    "nav_casting":"",
-    "nav_castlist":"",
-    "nav_actors":"",
+    "nav_casting": "https://www.rbcasting.com/rb/casting",
+    "nav_castlist": "https://www.rbcasting.com/rb/cast-list",
+    "nav_actors": "https://www.rbcasting.com/rb/advanced-search",
 
 
     "btn_search_advance":"",
@@ -17,14 +17,14 @@
     "lnk_casting": "https://www.rbcasting.com/casting/",
     "lnk_magazine": "https://www.rbcasting.com",
 
-    "btn_login":"",
-    "btn_signin":"",
+    "btn_login":"https://www.rbcasting.com/rb/casting?p_p_id=com_liferay_login_web_portlet_LoginPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=false",
+    "btn_signin": "https://www.rbcasting.com/rb/iscrizione",
 
     "btn_lnk_castlist":"",
     "btn_lnk_create_casting":"",
 
-    "lnk_privacy_policy":"",
-    "lnk_cookie_policy":"",
+    "lnk_privacy_policy": "https://www.rbcasting.com/chisiamo/note-legali-disclaimer/",
+    "lnk_cookie_policy": "https://www.rbcasting.com/web-cookie-policy",
 
     "lnk_fb":"https://www.facebook.com/rbcasting/",
     "lnk_ig":"https://www.instagram.com/rbcasting/",
