@@ -10,7 +10,7 @@
     "nav_actors": "https://www.rbcasting.com/rb/advanced-search",
 
 
-    "btn_search_advance":"",
+    "btn_search_advance":"https://www.rbcasting.com/rb/advanced-search",
     "lnk_create_casting": "https://www.rbcasting.com/rb/cast-list",
     "lnk_signup": "https://testi.rbcasting.com/iscrizione-interna",
     "lnk_users":"",
@@ -40,7 +40,7 @@
     "lnk_opportunita_casting_add":"https://static.rbcasting.com/AGGIUNGI-ANNUNCIO-CASTING-FORM.pdf",
     "lnk_opportunita_casting_candidacy":"https://static.rbcasting.com/CASTING-DIRECTOR-RICEVI-CANDIDATURE.pdf",
     "lnk_opportunita_casting_actors":"https://static.rbcasting.com/CONTATTA-ATTORI-DA-CAST-LIST.pdf",
-    "lnk_opportunita_casting_search": "https://rbcasting.com/rb/ricerca-avanzata",
+    "lnk_opportunita_casting_search": "https://www.rbcasting.com/rb/advanced-search",
     "lnk_opportunita_casting_signup": "https://rbcasting.com/rb/casting-directors-info-iscrizione",
     
     "lnk_opportunita_agent_profile":"https://www.rbcasting.com/rb/web/tna",
